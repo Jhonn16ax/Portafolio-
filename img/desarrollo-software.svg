@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="t d">
+<title id="t">Entorno de desarrollo de software</title><desc id="d">Ilustración de una computadora con código, una interfaz web y herramientas de desarrollo.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#173b5d"/><stop offset="1" stop-color="#0b182b"/></linearGradient>
+ <linearGradient id="screen" x2="1" y2="1"><stop stop-color="#152d49"/><stop offset="1" stop-color="#091626"/></linearGradient>
+ <linearGradient id="blue" x2="1"><stop stop-color="#58e0eb"/><stop offset="1" stop-color="#4f91ff"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="900" height="620" rx="24" fill="url(#bg)"/>
+<circle cx="460" cy="270" r="230" fill="#1687c9" opacity=".12" filter="url(#glow)"/>
+<g opacity=".14" stroke="#8fc9e9"><path d="M0 100H900M0 200H900M0 300H900M0 400H900M0 500H900"/><path d="M100 0V620M200 0V620M300 0V620M400 0V620M500 0V620M600 0V620M700 0V620M800 0V620"/></g>
+<!-- floating code brackets -->
+<path d="m100 220 44-42-44-42M178 136l-25 84M800 175l-43-39 43-41M724 96l25 79" fill="none" stroke="#65e0e7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+<!-- main monitor -->
+<rect x="202" y="95" width="506" height="340" rx="22" fill="#070f1b" stroke="#80bce2" stroke-opacity=".55" stroke-width="4"/>
+<rect x="218" y="112" width="474" height="306" rx="12" fill="url(#screen)"/>
+<path d="M218 152H692" stroke="#304862" stroke-width="2"/>
+<circle cx="240" cy="132" r="5" fill="#ff7d8b"/><circle cx="259" cy="132" r="5" fill="#f6cf72"/><circle cx="278" cy="132" r="5" fill="#79dda8"/>
+<rect x="302" y="124" width="97" height="16" rx="5" fill="#1c3854"/>
+<g font-family="monospace" font-size="17">
+ <text x="245" y="190" fill="#829cb9">01</text><text x="282" y="190" fill="#efb5d6">const</text><text x="341" y="190" fill="#75c3ff"> app </text><text x="397" y="190" fill="#e6edf7">= {</text>
+ <text x="245" y="225" fill="#829cb9">02</text><text x="282" y="225" fill="#65e0e7"> name:</text><text x="362" y="225" fill="#b5e6a4"> "My Project",</text>
+ <text x="245" y="260" fill="#829cb9">03</text><text x="282" y="260" fill="#65e0e7"> build:</text><text x="362" y="260" fill="#b5e6a4"> () =&gt; create()</text>
+ <text x="245" y="295" fill="#829cb9">04</text><text x="282" y="295" fill="#65e0e7"> learn:</text><text x="362" y="295" fill="#b5e6a4"> "every day"</text>
+ <text x="245" y="330" fill="#829cb9">05</text><text x="282" y="330" fill="#e6edf7">};</text>
+ <text x="245" y="375" fill="#7b93ad">// Ideas become applications.</text>
+</g>
+<!-- monitor stand -->
+<path d="M425 435h60v65h-60z" fill="#203d59" stroke="#80bce2" stroke-opacity=".35" stroke-width="3"/>
+<path d="M373 500h164l35 28H338Z" fill="#395d7c" stroke="#81b9de" stroke-width="3"/>
+<!-- mini interface floating panel -->
+<rect x="568" y="265" width="255" height="206" rx="16" fill="#101f34" stroke="#65e0e7" stroke-width="3"/>
+<rect x="584" y="282" width="223" height="35" rx="7" fill="#1a3450"/>
+<circle cx="600" cy="299" r="5" fill="#65e0e7"/><rect x="616" y="294" width="95" height="8" rx="4" fill="#a3bbd3" opacity=".7"/>
+<rect x="584" y="330" width="99" height="123" rx="8" fill="#183956"/>
+<rect x="696" y="330" width="111" height="55" rx="8" fill="#1e4264"/>
+<rect x="696" y="395" width="111" height="58" rx="8" fill="#15314c"/>
+<path d="M603 420l19-24 17 13 23-39" fill="none" stroke="#65e0e7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="709" y="345" width="78" height="7" rx="3" fill="#8ab9e2"/><rect x="709" y="360" width="52" height="6" rx="3" fill="#6285a7"/>
+<rect x="709" y="409" width="75" height="7" rx="3" fill="#a9e6ba"/><rect x="709" y="425" width="56" height="6" rx="3" fill="#6285a7"/>
+<!-- base and keyboard -->
+<path d="M145 532h612l-41 37H185Z" fill="#203d57" stroke="#5c94bc" stroke-width="3"/>
+<path d="M213 542h473" stroke="#6d9cbd" stroke-width="3" stroke-dasharray="13 8"/>
+<path d="M368 570h168" stroke="#65e0e7" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+<circle cx="120" cy="422" r="8" fill="#65e0e7"/><circle cx="780" cy="116" r="7" fill="#a9e6ba"/>
+</svg>
