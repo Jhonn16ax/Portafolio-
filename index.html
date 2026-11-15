@@ -741,6 +741,14 @@
     @media(max-width:900px){.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.capability-card:last-child{grid-column:1/-1}}
     @media(max-width:700px){.capability-grid{grid-template-columns:1fr;gap:12px}.capability-card:last-child{grid-column:auto}.capability-card{min-height:0;padding:22px 19px}.capability-top{margin-bottom:21px}.capability-card>p{margin-bottom:19px}}
 
+  
+    .profile-intro{margin:0 0 15px;padding:0 0 14px;border-bottom:1px solid rgba(129,188,225,.16)}
+    .profile-eyebrow{display:block;margin-bottom:7px;color:#8fe8e7;font: .52rem var(--mono);letter-spacing:.15em}
+    .profile-copy p.profile-hook{max-width:760px;margin:0;color:#eef6ff;font-size:clamp(1.06rem,1.65vw,1.38rem);font-weight:750;line-height:1.5;letter-spacing:-.025em}
+    .profile-hook strong{color:#8fe8e7}
+    .profile-copy .trait-list{margin-top:13px}
+    @media(max-width:700px){.profile-intro{margin-bottom:12px;padding-bottom:11px}.profile-copy p.profile-hook{font-size:1.08rem}}
+
   </style>
 </head>
 <body>
@@ -816,10 +824,16 @@
           <p>Estudiante de Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ).</p>
         </article>
         <article class="bento-card profile-copy">
-          <p>Actualmente estudio <strong>Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)</strong>. En mis proyectos académicos he trabajado en páginas web, videojuegos, interactividad y comunicación entre usuarios en línea.</p>
-          <p>Me considero una persona responsable, organizada y comprometida con las tareas que asumo. Me gusta analizar problemas, probar alternativas y aprender de los errores para mejorar el resultado. También valoro la comunicación y el trabajo bien hecho.</p>
-          <p>Quiero seguir aprendiendo sobre desarrollo de software, programación, bases de datos y creación de aplicaciones completas. Mi objetivo es convertir los conocimientos de la universidad en soluciones útiles y seguir creciendo con nuevos proyectos.</p>
-          <div class="trait-list"><span>RESPONSABILIDAD</span><span>ORGANIZACIÓN</span><span>RESOLUCIÓN DE PROBLEMAS</span><span>APRENDIZAJE CONTINUO</span></div>
+          <div class="profile-intro">
+            <span class="profile-eyebrow">MI ENFOQUE</span>
+            <p class="profile-hook">Me gusta convertir ideas en soluciones digitales que se puedan <strong>usar, probar y mejorar.</strong></p>
+          </div>
+          <p>Soy estudiante de <strong>Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)</strong> y estoy construyendo mi camino en el desarrollo de software. Me interesa comprender cómo funciona un problema y transformarlo en una aplicación útil, clara y funcional.</p>
+          <p>He llevado ese interés a proyectos concretos: en <strong>Velocity Run</strong> desarrollé la lógica de un videojuego de plataformas; en <strong>Speed Rivals</strong> trabajé en una experiencia de carreras para dos jugadores, con comunicación en tiempo real y registro de resultados. Estos proyectos me han permitido practicar programación, interacción, diseño de interfaces y conexión con servicios digitales.</p>
+          <p>Me caracteriza una forma de trabajar basada en la responsabilidad, la curiosidad y la mejora continua. Cuando algo no funciona, reviso el problema, pruebo alternativas y aprendo del proceso en lugar de conformarme con la primera versión.</p>
+          <p>Fuera de la tecnología, soy deportista de alto rendimiento y <strong>campeón nacional de ciclismo</strong>. La disciplina y constancia que exige la competencia también forman parte de cómo afronto mis estudios y los retos de cada proyecto.</p>
+          <p>Mi objetivo es seguir creciendo en el área tecnológica, aprender de profesionales y aportar a un equipo con compromiso, iniciativa y ganas de construir soluciones que generen valor.</p>
+          <div class="trait-list"><span>RESPONSABILIDAD</span><span>INICIATIVA</span><span>RESOLUCIÓN DE PROBLEMAS</span><span>DISCIPLINA</span><span>APRENDIZAJE CONTINUO</span></div>
         </article>
       </div>
     </section>
