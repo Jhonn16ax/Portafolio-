@@ -173,7 +173,27 @@
       .footer span { order: 3; width: 100%; }
     }
     @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
-  </style>
+  
+    .hero-visual > svg { display:block; width:100%; height:auto; }
+    .project-visual > svg { display:block; width:100%; height:auto; min-height:270px; }
+    .focus-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:25px; }
+    .focus-card { overflow:hidden; border:1px solid var(--line); border-radius:11px; background:linear-gradient(145deg,rgba(24,44,68,.88),rgba(13,28,46,.96)); transition:transform .2s,border-color .2s; }
+    .focus-card:hover { transform:translateY(-3px); border-color:rgba(108,224,230,.35); }
+    .focus-art { min-height:145px; display:grid; place-items:center; overflow:hidden; background:radial-gradient(circle at 50% 60%,rgba(92,183,227,.19),transparent 65%); border-bottom:1px solid var(--line); }
+    .focus-art svg { display:block; width:min(100%,330px); height:145px; }
+    .focus-copy { padding:16px 17px 18px; }
+    .focus-copy small { color:var(--cyan); font: .52rem var(--mono); letter-spacing:.12em; }
+    .focus-copy h3 { margin:6px 0 5px; font-size:.93rem; }
+    .focus-copy p { margin:0; color:var(--muted); font-size:.7rem; line-height:1.75; }
+    @media(max-width:900px) { .focus-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:680px) {
+      .focus-grid { grid-template-columns:1fr; }
+      .focus-art { min-height:165px; }
+      .focus-art svg { height:165px; }
+      .project-visual > svg { min-height:0; }
+    }
+
+</style>
 </head>
 <body>
   <header class="topbar">
@@ -210,7 +230,52 @@
         </div>
       </div>
       <div class="hero-visual">
-        <img src="img/desarrollo-software.svg" alt="Ilustración de una computadora con código e interfaz digital">
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="hero-t hero-d">
+<title id="hero-t">Entorno de desarrollo de software</title><desc id="hero-d">Ilustración de una computadora con código, una interfaz web y herramientas de desarrollo.</desc>
+<defs>
+ <linearGradient id="hero-bg" x2="1" y2="1"><stop stop-color="#173b5d"/><stop offset="1" stop-color="#0b182b"/></linearGradient>
+ <linearGradient id="hero-screen" x2="1" y2="1"><stop stop-color="#152d49"/><stop offset="1" stop-color="#091626"/></linearGradient>
+ <linearGradient id="hero-blue" x2="1"><stop stop-color="#58e0eb"/><stop offset="1" stop-color="#4f91ff"/></linearGradient>
+ <filter id="hero-glow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="900" height="620" rx="24" fill="url(#hero-bg)"/>
+<circle cx="460" cy="270" r="230" fill="#1687c9" opacity=".12" filter="url(#hero-glow)"/>
+<g opacity=".14" stroke="#8fc9e9"><path d="M0 100H900M0 200H900M0 300H900M0 400H900M0 500H900"/><path d="M100 0V620M200 0V620M300 0V620M400 0V620M500 0V620M600 0V620M700 0V620M800 0V620"/></g>
+<!-- floating code brackets -->
+<path d="m100 220 44-42-44-42M178 136l-25 84M800 175l-43-39 43-41M724 96l25 79" fill="none" stroke="#65e0e7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+<!-- main monitor -->
+<rect x="202" y="95" width="506" height="340" rx="22" fill="#070f1b" stroke="#80bce2" stroke-opacity=".55" stroke-width="4"/>
+<rect x="218" y="112" width="474" height="306" rx="12" fill="url(#hero-screen)"/>
+<path d="M218 152H692" stroke="#304862" stroke-width="2"/>
+<circle cx="240" cy="132" r="5" fill="#ff7d8b"/><circle cx="259" cy="132" r="5" fill="#f6cf72"/><circle cx="278" cy="132" r="5" fill="#79dda8"/>
+<rect x="302" y="124" width="97" height="16" rx="5" fill="#1c3854"/>
+<g font-family="monospace" font-size="17">
+ <text x="245" y="190" fill="#829cb9">01</text><text x="282" y="190" fill="#efb5d6">const</text><text x="341" y="190" fill="#75c3ff"> app </text><text x="397" y="190" fill="#e6edf7">= {</text>
+ <text x="245" y="225" fill="#829cb9">02</text><text x="282" y="225" fill="#65e0e7"> name:</text><text x="362" y="225" fill="#b5e6a4"> "My Project",</text>
+ <text x="245" y="260" fill="#829cb9">03</text><text x="282" y="260" fill="#65e0e7"> build:</text><text x="362" y="260" fill="#b5e6a4"> () =&gt; create()</text>
+ <text x="245" y="295" fill="#829cb9">04</text><text x="282" y="295" fill="#65e0e7"> learn:</text><text x="362" y="295" fill="#b5e6a4"> "every day"</text>
+ <text x="245" y="330" fill="#829cb9">05</text><text x="282" y="330" fill="#e6edf7">};</text>
+ <text x="245" y="375" fill="#7b93ad">// Ideas become applications.</text>
+</g>
+<!-- monitor stand -->
+<path d="M425 435h60v65h-60z" fill="#203d59" stroke="#80bce2" stroke-opacity=".35" stroke-width="3"/>
+<path d="M373 500h164l35 28H338Z" fill="#395d7c" stroke="#81b9de" stroke-width="3"/>
+<!-- mini interface floating panel -->
+<rect x="568" y="265" width="255" height="206" rx="16" fill="#101f34" stroke="#65e0e7" stroke-width="3"/>
+<rect x="584" y="282" width="223" height="35" rx="7" fill="#1a3450"/>
+<circle cx="600" cy="299" r="5" fill="#65e0e7"/><rect x="616" y="294" width="95" height="8" rx="4" fill="#a3bbd3" opacity=".7"/>
+<rect x="584" y="330" width="99" height="123" rx="8" fill="#183956"/>
+<rect x="696" y="330" width="111" height="55" rx="8" fill="#1e4264"/>
+<rect x="696" y="395" width="111" height="58" rx="8" fill="#15314c"/>
+<path d="M603 420l19-24 17 13 23-39" fill="none" stroke="#65e0e7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="709" y="345" width="78" height="7" rx="3" fill="#8ab9e2"/><rect x="709" y="360" width="52" height="6" rx="3" fill="#6285a7"/>
+<rect x="709" y="409" width="75" height="7" rx="3" fill="#a9e6ba"/><rect x="709" y="425" width="56" height="6" rx="3" fill="#6285a7"/>
+<!-- base and keyboard -->
+<path d="M145 532h612l-41 37H185Z" fill="#203d57" stroke="#5c94bc" stroke-width="3"/>
+<path d="M213 542h473" stroke="#6d9cbd" stroke-width="3" stroke-dasharray="13 8"/>
+<path d="M368 570h168" stroke="#65e0e7" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+<circle cx="120" cy="422" r="8" fill="#65e0e7"/><circle cx="780" cy="116" r="7" fill="#a9e6ba"/>
+</svg>
         <div class="visual-caption"><span>DESARROLLO DE SOFTWARE</span><span>IDEAS · CÓDIGO · SOLUCIONES</span></div>
       </div>
     </section>
@@ -245,7 +310,56 @@
         <article class="skill"><div class="skill-icon">2D</div><h3>Canvas 2D</h3><p>Representación gráfica para videojuegos 2D.</p></article>
         <article class="skill"><div class="skill-icon">UI</div><h3>Interfaces web</h3><p>Diseño de pantallas e interacción adaptable.</p></article>
       </div>
-      <p class="skills-note">Los conocimientos descritos corresponden a herramientas utilizadas en mis proyectos académicos; no representan certificaciones profesionales.</p>
+      <p class="skills-note">Los conocimientos descritos corresponden a herramientas utilizadas en mis proyectos académicos; continúo ampliándolos con la práctica.</p>
+      <div class="focus-grid">
+        <article class="focus-card">
+          <div class="focus-art">
+            <svg viewBox="0 0 340 160" aria-hidden="true">
+              <defs><linearGradient id="focus-int" x2="1" y2="1"><stop stop-color="#65e0e7"/><stop offset="1" stop-color="#639dff"/></linearGradient></defs>
+              <rect x="53" y="18" width="234" height="117" rx="10" fill="#0b1728" stroke="#6098c8" stroke-width="3"/>
+              <rect x="63" y="29" width="214" height="15" rx="4" fill="#213b59"/>
+              <circle cx="74" cy="36" r="3" fill="#ff8591"/><circle cx="85" cy="36" r="3" fill="#f4ce70"/><circle cx="96" cy="36" r="3" fill="#91dda8"/>
+              <rect x="75" y="55" width="82" height="64" rx="5" fill="#173553"/><rect x="166" y="55" width="99" height="26" rx="5" fill="#21446a"/>
+              <rect x="166" y="89" width="46" height="30" rx="4" fill="#1c627d"/><rect x="219" y="89" width="46" height="30" rx="4" fill="#224a70"/>
+              <path d="M91 103 109 82 126 92 146 68" fill="none" stroke="url(#focus-int)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M141 135h58l15 11H126Z" fill="#426789"/>
+            </svg>
+          </div>
+          <div class="focus-copy"><small>01 / FRONT-END</small><h3>Interfaces web</h3><p>Organización de contenido, diseño visual y adaptación de páginas para diferentes dispositivos.</p></div>
+        </article>
+        <article class="focus-card">
+          <div class="focus-art">
+            <svg viewBox="0 0 340 160" aria-hidden="true">
+              <rect x="57" y="16" width="226" height="128" rx="10" fill="#091525" stroke="#5a9bd1" stroke-width="3"/>
+              <path d="M57 43h226" stroke="#294664" stroke-width="2"/>
+              <circle cx="73" cy="30" r="4" fill="#ff8591"/><circle cx="87" cy="30" r="4" fill="#f4ce70"/><circle cx="101" cy="30" r="4" fill="#91dda8"/>
+              <g font-family="monospace" font-size="11">
+                <text x="72" y="65" fill="#718ba8">01</text><text x="98" y="65" fill="#e9a6d0">const</text><text x="137" y="65" fill="#79dce7"> solve</text><text x="184" y="65" fill="#eef4fb"> = () =&gt; {</text>
+                <text x="72" y="84" fill="#718ba8">02</text><text x="98" y="84" fill="#a9e6ba"> analyze(problem);</text>
+                <text x="72" y="103" fill="#718ba8">03</text><text x="98" y="103" fill="#a9e6ba"> build(solution);</text>
+                <text x="72" y="122" fill="#718ba8">04</text><text x="98" y="122" fill="#eef4fb">};</text>
+              </g>
+              <path d="M24 81h23m-11-10 11 10-11 10M316 81h-23m11-10-11 10 11 10" fill="none" stroke="#65e0e7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="focus-copy"><small>02 / PROGRAMACIÓN</small><h3>Lógica y desarrollo</h3><p>Uso de instrucciones, eventos y funciones para dar comportamiento e interactividad a una aplicación.</p></div>
+        </article>
+        <article class="focus-card">
+          <div class="focus-art">
+            <svg viewBox="0 0 340 160" aria-hidden="true">
+              <g fill="none" stroke="#65e0e7" stroke-width="3"><path d="M170 48V72M90 109h160M90 109V86M250 109V86"/></g>
+              <rect x="119" y="16" width="102" height="42" rx="9" fill="#1a4264" stroke="#65e0e7" stroke-width="2"/>
+              <path d="M147 39q-8-15 8-18 10-9 21 1 15-1 15 12 0 8-11 8h-24q-9 0-9-3Z" fill="#9bdde7"/>
+              <rect x="43" y="69" width="94" height="68" rx="8" fill="#142d48" stroke="#659fff" stroke-width="2"/>
+              <ellipse cx="90" cy="86" rx="42" ry="10" fill="#2a7e9b" stroke="#79dce7" stroke-width="2"/>
+              <path d="M48 86v32q42 17 84 0V86" fill="#1c5377" stroke="#659fff" stroke-width="2"/>
+              <rect x="203" y="69" width="94" height="68" rx="8" fill="#142d48" stroke="#659fff" stroke-width="2"/>
+              <rect x="215" y="82" width="70" height="8" rx="4" fill="#5e9bd4"/><rect x="215" y="99" width="55" height="7" rx="3" fill="#65e0e7"/><rect x="215" y="114" width="62" height="7" rx="3" fill="#9fddb2"/>
+            </svg>
+          </div>
+          <div class="focus-copy"><small>03 / SERVICIOS CONECTADOS</small><h3>Datos y comunicación</h3><p>Primeros proyectos con Supabase Realtime y almacenamiento de resultados para usuarios conectados en línea.</p></div>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="proyectos">
@@ -257,7 +371,29 @@
         <article class="project">
           <div class="project-visual">
             <span class="project-label">PROYECTO 01 · VIDEOJUEGO</span>
-            <img src="img/velocity-run-visual.svg" alt="Ilustración de Velocity Run, videojuego de plataformas">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="velocity-t velocity-d">
+<title id="velocity-t">Velocity Run, videojuego de plataformas</title><desc id="velocity-d">Ilustración de un personaje saltando entre plataformas mientras recoge anillos.</desc>
+<defs><linearGradient id="velocity-sky" x2="0" y2="1"><stop stop-color="#3597d4"/><stop offset="1" stop-color="#b3ebf4"/></linearGradient><linearGradient id="velocity-land" x2="0" y2="1"><stop stop-color="#69c66e"/><stop offset="1" stop-color="#286e53"/></linearGradient></defs>
+<rect width="900" height="540" fill="url(#velocity-sky)"/>
+<circle cx="740" cy="100" r="52" fill="#ffe48e"/>
+<g fill="#f4fdff" opacity=".88"><ellipse cx="165" cy="105" rx="70" ry="24"/><ellipse cx="204" cy="92" rx="39" ry="31"/><ellipse cx="630" cy="175" rx="52" ry="18"/></g>
+<path d="M0 340 150 235 250 315 420 195 565 320 715 220 900 335V540H0Z" fill="#397f76"/>
+<path d="M0 385 155 300 285 365 470 270 625 370 765 285 900 370V540H0Z" fill="#3c9b62"/>
+<g fill="#f0c46b" stroke="#5c4029" stroke-width="10"><rect x="0" y="432" width="900" height="108" rx="7"/></g>
+<path d="M0 465H900M0 500H900" stroke="#a86b41" stroke-width="11" stroke-dasharray="24 16"/>
+<g fill="#b5f6d1" stroke="#245941" stroke-width="7"><rect x="40" y="375" width="200" height="52" rx="8"/><rect x="380" y="340" width="174" height="52" rx="8"/><rect x="670" y="384" width="170" height="48" rx="8"/></g>
+<g fill="none" stroke="#ffd85f" stroke-width="15"><circle cx="300" cy="285" r="29"/><circle cx="380" cy="250" r="29"/><circle cx="590" cy="280" r="29"/></g>
+<!-- little platform runner -->
+<g transform="translate(270 260)">
+ <circle cx="53" cy="24" r="26" fill="#51dce7" stroke="#112a44" stroke-width="7"/>
+ <path d="M32 13q14-22 42-10l12 14-23-5-13 9Z" fill="#1d79b1"/>
+ <path d="M36 52 76 50 90 107 43 114Z" fill="#2389bd" stroke="#112a44" stroke-width="7"/>
+ <path d="m49 107-24 44m47-42 25 30" stroke="#112a44" stroke-width="17" stroke-linecap="round"/>
+ <path d="m28 151-25 5m94-17 20 8" stroke="#f45d68" stroke-width="13" stroke-linecap="round"/>
+ <path d="m37 63-27 30m54-32 32-15" stroke="#f4e8ce" stroke-width="13" stroke-linecap="round"/>
+</g>
+<g fill="#e9f8ff" opacity=".9"><path d="m135 390 18-35 18 35Z"/><path d="m813 380 14-30 14 30Z"/></g>
+</svg>
           </div>
           <div class="project-copy">
             <div class="project-overline"><span>DESARROLLO WEB · JAVASCRIPT</span><span>PUBLICADO</span></div>
@@ -272,7 +408,31 @@
         <article class="project">
           <div class="project-visual">
             <span class="project-label">PROYECTO 02 · MULTIJUGADOR</span>
-            <img src="img/speed-rivals-visual.svg" alt="Ilustración de Speed Rivals, videojuego de carreras para dos jugadores">
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="speed-t speed-d">
+<title id="speed-t">Speed Rivals, videojuego de carreras 2D</title><desc id="speed-d">Ilustración de dos autos compitiendo en una pista de carreras nocturna.</desc>
+<defs><linearGradient id="speed-night" x2="0" y2="1"><stop stop-color="#172e56"/><stop offset="1" stop-color="#081629"/></linearGradient><linearGradient id="speed-road" x2="0" y2="1"><stop stop-color="#334a65"/><stop offset="1" stop-color="#101927"/></linearGradient></defs>
+<rect width="900" height="540" fill="url(#speed-night)"/>
+<g opacity=".65"><path d="M0 240h900v300H0Z" fill="#182943"/><g fill="#263e5b"><path d="M20 240V115h75v125M120 240V65h90v175M240 240V150h80v90M365 240V85h90v155M500 240V125h80v115M625 240V55h100v185M760 240V130h110v110"/></g></g>
+<g fill="#65e0e7" opacity=".8"><rect x="35" y="144" width="14" height="20"/><rect x="64" y="144" width="14" height="20"/><rect x="144" y="96" width="17" height="22"/><rect x="175" y="96" width="17" height="22"/><rect x="650" y="91" width="18" height="22"/><rect x="683" y="91" width="18" height="22"/></g>
+<path d="M210 540 350 240h200l140 300Z" fill="url(#speed-road)" stroke="#5ee6e8" stroke-width="6"/>
+<path d="M445 540 440 240" stroke="#e7f5fa" stroke-width="9" stroke-dasharray="34 28" opacity=".9"/>
+<path d="M210 540 350 240M700 540 550 240" stroke="#e7f5fa" stroke-width="8" stroke-dasharray="22 24" opacity=".35"/>
+<!-- cars -->
+<g transform="translate(325 355)">
+ <path d="M0 45 12 13Q21 0 52 0h49q30 0 40 18l14 27v51H0Z" fill="#f14c54" stroke="#071425" stroke-width="8"/>
+ <path d="m42 15 14-10h44l16 10 9 24H30Z" fill="#7ac6e7" stroke="#071425" stroke-width="7"/>
+ <path d="M6 61h147" stroke="#ffc7a1" stroke-width="7"/>
+ <circle cx="32" cy="92" r="17" fill="#071425" stroke="#a8bfd4" stroke-width="6"/><circle cx="125" cy="92" r="17" fill="#071425" stroke="#a8bfd4" stroke-width="6"/>
+</g>
+<g transform="translate(515 310) scale(.85)">
+ <path d="M0 45 12 13Q21 0 52 0h49q30 0 40 18l14 27v51H0Z" fill="#2786ed" stroke="#071425" stroke-width="8"/>
+ <path d="m42 15 14-10h44l16 10 9 24H30Z" fill="#8de7f3" stroke="#071425" stroke-width="7"/>
+ <path d="M6 61h147" stroke="#baf8ff" stroke-width="7"/>
+ <circle cx="32" cy="92" r="17" fill="#071425" stroke="#a8bfd4" stroke-width="6"/><circle cx="125" cy="92" r="17" fill="#071425" stroke="#a8bfd4" stroke-width="6"/>
+</g>
+<g fill="#b9ff69"><circle cx="95" cy="340" r="5"/><circle cx="800" cy="310" r="5"/><circle cx="145" cy="270" r="4"/></g>
+<g fill="#65e0e7" opacity=".7"><path d="M50 400h70M780 420h75M82 430h40M740 450h55" stroke="#65e0e7" stroke-width="5"/></g>
+</svg>
           </div>
           <div class="project-copy">
             <div class="project-overline"><span>APLICACIÓN WEB · TIEMPO REAL</span><span>PUBLICADO</span></div>
@@ -288,19 +448,18 @@
 
     <section class="section" id="ciclismo">
       <div class="section-head">
-        <div><div class="section-kicker"><b>04</b> / PERFIL PERSONAL</div><h2>Disciplina dentro y fuera<br>de la tecnología.</h2></div>
-        <p class="section-summary">Una actividad que complementa mi formación y fortalece mi manera de asumir nuevos retos.</p>
+        <div><div class="section-kicker"><b>05</b> / PERFIL PERSONAL</div><h2>Disciplina dentro y fuera<br>de la tecnología.</h2></div>
+        <p class="section-summary">El deporte complementa mi formación y fortalece mi manera de asumir responsabilidades y nuevos retos.</p>
       </div>
       <div class="cycling-compact">
         <div class="cycling-icon" aria-hidden="true">🚴</div>
         <div class="cycling-copy">
-          <h3>Ciclismo competitivo</h3>
-          <p>Practico ciclismo y he participado en campeonatos nacionales. En la temporada 2026 obtuve el título de campeón nacional, dos medallas de oro y dos de bronce. Esta experiencia ha fortalecido mi disciplina, constancia y responsabilidad, cualidades que también aplico a mis estudios y proyectos.</p>
+          <h3>Ciclismo competitivo · Campeón nacional</h3>
+          <p>Además de la computación, practico ciclismo competitivo. La preparación para las competencias me ha enseñado a organizar mi tiempo, mantener la constancia y trabajar con disciplina para alcanzar objetivos. He logrado el título de campeón nacional de ciclismo, un resultado que representa esfuerzo, compromiso y perseverancia. Estas cualidades también forman parte de mi manera de estudiar, programar y enfrentar problemas.</p>
         </div>
-        <div class="cycling-results"><small>LOGROS · 2026</small><strong>Campeón nacional</strong><span>2 oros · 2 bronces</span></div>
+        <div class="cycling-results"><small>LOGRO DEPORTIVO</small><strong>Campeón nacional</strong><span>Ciclismo competitivo</span></div>
       </div>
     </section>
-
     <section class="section">
       <div class="closing">
         <div><div class="section-kicker"><b>05</b> / OBJETIVO</div><h2>Preparado para seguir aprendiendo y aportar.</h2><p>Mi objetivo es continuar fortaleciendo mis conocimientos en computación, participar en nuevos proyectos y aportar responsabilidad, dedicación y disposición para aprender en cada oportunidad.</p></div>
