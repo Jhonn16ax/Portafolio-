@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Entrenamiento de ciclismo</title><desc id="desc">Ilustración de un ciclista entrenando por una carretera de montaña al amanecer.</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#163c62"/><stop offset=".63" stop-color="#5b9aa9"/><stop offset="1" stop-color="#f0c47c"/></linearGradient>
+ <linearGradient id="road" x2="0" y2="1"><stop stop-color="#405b72"/><stop offset="1" stop-color="#111d31"/></linearGradient>
+ <linearGradient id="jersey" x2="1" y2="1"><stop stop-color="#61e5e9"/><stop offset="1" stop-color="#277baf"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<rect width="900" height="560" fill="url(#sky)"/>
+<circle cx="690" cy="135" r="68" fill="#ffe0a0" opacity=".88"/>
+<circle cx="690" cy="135" r="102" fill="#ffdb99" opacity=".24" filter="url(#glow)"/>
+<path d="M0 345 140 190 230 290 370 130 535 330 675 175 900 350V560H0Z" fill="#294b64"/>
+<path d="m0 370 165-115 90 77 145-125 135 140 140-110 225 135v188H0Z" fill="#1d5664"/>
+<path d="m345 289 55-57 43 46-44-18-28 24 30-8 36 38-72-20Z" fill="#b3d1d7" opacity=".74"/>
+<path d="m655 260 39-47 54 59-44-25-28 25 17-5Z" fill="#b3d1d7" opacity=".65"/>
+<path d="M0 400 Q220 355 405 407 T900 390V560H0Z" fill="#183c3d"/>
+<path d="M0 455 Q250 385 420 446 T900 426" fill="none" stroke="#77a58d" stroke-width="10" opacity=".35"/>
+<path d="M270 560 Q380 425 520 410 Q605 395 725 560Z" fill="url(#road)"/>
+<path d="M482 560 Q501 483 559 422" fill="none" stroke="#e8d7a2" stroke-width="7" stroke-dasharray="28 26" opacity=".85"/>
+<path d="M0 523 Q250 474 343 492" fill="none" stroke="#75d4c9" stroke-width="5" opacity=".45"/>
+<g transform="translate(380 260)">
+ <circle cx="45" cy="205" r="61" fill="none" stroke="#e7f4f7" stroke-width="7" opacity=".9"/>
+ <circle cx="224" cy="205" r="61" fill="none" stroke="#e7f4f7" stroke-width="7" opacity=".9"/>
+ <circle cx="45" cy="205" r="5" fill="#baf26e"/><circle cx="224" cy="205" r="5" fill="#baf26e"/>
+ <g fill="none" stroke="#baf26e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M45 205 129 132 166 205H45L129 132 224 205 180 104"/>
+  <path d="m180 104 34-8 10 8"/>
+ </g>
+ <circle cx="166" cy="205" r="10" fill="#10243a" stroke="#baf26e" stroke-width="5"/>
+ <g fill="none" stroke="#e8f5ff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m130 45 35 43 15 16 34 0"/>
+  <path d="m164 88-49 25-30 35-35 57"/>
+  <path d="m165 88 24-25 37 33"/>
+  <path d="m130 45-31 35-25 14"/>
+  <path d="m165 88-2 42 3 75"/>
+  <path d="m165 130-40 19-40 54"/>
+ </g>
+ <path d="M108 39q19-31 47-9l11 19-39 10Z" fill="#baf26e" stroke="#edf7ff" stroke-width="4"/>
+ <path d="m112 94 54-10 20 38-48 25-37-26Z" fill="url(#jersey)" stroke="#e9f5ff" stroke-width="3"/>
+</g>
+<g fill="#d8eff2" opacity=".45"><circle cx="85" cy="130" r="3"/><circle cx="135" cy="110" r="2"/><circle cx="250" cy="150" r="2"/><circle cx="800" cy="210" r="3"/><circle cx="830" cy="250" r="2"/></g>
+<rect x="22" y="22" width="856" height="516" rx="18" fill="none" stroke="#d7f1ff" stroke-opacity=".25" stroke-width="2"/>
+</svg>
