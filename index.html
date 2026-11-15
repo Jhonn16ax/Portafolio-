@@ -687,6 +687,33 @@
       .closing{align-items:flex-start}
     }
 
+
+    /* FOTOS DE CICLISMO: fuentes estables, marcos visibles y créditos */
+    .cycling-media{min-width:0}
+    .cycling-visual{height:248px;overflow:hidden}
+    .cycling-photo-one{left:4%;top:12px;width:61%;height:166px;transform:rotate(-3deg)}
+    .cycling-photo-two{right:5%;bottom:39px;width:48%;height:132px;transform:rotate(3deg)}
+    .cycling-visual .visual-label{bottom:8px;left:10px;font-size:.43rem;padding:5px 8px}
+    .image-credit{margin:9px 2px 0;color:#8fa5bd;font-size:.51rem;line-height:1.55}
+    .image-credit a,.image-attribution a{color:#91e8e8;text-decoration:underline;text-decoration-color:rgba(145,232,232,.45);text-underline-offset:2px}
+    .image-attribution{min-height:0!important;margin:8px 0 0!important;color:#8299b2!important;font-size:.49rem!important;line-height:1.45!important}
+    @media(max-width:850px){
+      .cycling-visual{height:225px}
+      .cycling-photo-one{height:145px}
+      .cycling-photo-two{height:118px;bottom:38px}
+    }
+    @media(max-width:700px){
+      .cycling-visual{height:235px!important}
+      .cycling-photo-one{height:152px!important}
+      .cycling-photo-two{height:122px!important;bottom:39px!important}
+      .image-credit{font-size:.49rem}
+    }
+    @media(max-width:430px){
+      .cycling-visual{height:220px!important}
+      .cycling-photo-one{height:138px!important;width:62%}
+      .cycling-photo-two{height:110px!important;width:49%;bottom:38px!important}
+    }
+
   </style>
 </head>
 <body>
@@ -796,11 +823,12 @@
           </div>
         </article>
         <article class="interest-card">
-          <div class="interest-image"><img src="https://images.unsplash.com/photo-1544191696-15693072c9c4?auto=format&fit=crop&w=900&q=85" alt="Ciclista entrenando en carretera" loading="lazy"><span>03 / DEPORTE</span></div>
+          <div class="interest-image"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Carrera_ciclista._Pelot%C3%B3n_ciclista.jpg/1280px-Carrera_ciclista._Pelot%C3%B3n_ciclista.jpg" alt="Ciclista entrenando en carretera" loading="lazy"><span>03 / DEPORTE</span></div>
           <div class="interest-copy">
             <h3>Ciclismo competitivo</h3>
             <p>El ciclismo es una parte importante de mi vida. Soy deportista de alto rendimiento y he llegado a ser campeón nacional; este deporte me enseña disciplina, constancia y a trabajar por objetivos.</p>
             <a href="#ciclismo">Conocer mi experiencia deportiva ↗</a>
+            <p class="image-attribution">Foto: <a href="https://commons.wikimedia.org/wiki/File:Carrera_ciclista._Pelot%C3%B3n_ciclista.jpg" target="_blank" rel="noopener noreferrer">Juan Emilio Prades Bel · CC BY 4.0</a>.</p>
           </div>
         </article>
       </div>
@@ -946,10 +974,16 @@
           <h2>Disciplina dentro y fuera<br>de la tecnología.</h2>
           <p class="section-summary">El deporte es una parte importante de mi vida y complementa mi formación en Ingeniería en Computación.</p>
         </div>
-        <div class="editorial-visual cycling-visual" aria-label="Imágenes de ciclismo de alto rendimiento">
-          <div class="photo-frame cycling-photo-one"><img src="https://images.unsplash.com/photo-1544191696-15693072c9c4?auto=format&fit=crop&w=700&q=85" alt="Ciclista entrenando en carretera" loading="lazy"></div>
-          <div class="photo-frame cycling-photo-two"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=700&q=85" alt="Ciclismo deportivo al aire libre" loading="lazy"></div>
-          <span class="visual-label">FOCUS · DISCIPLINE · GOALS</span>
+        <div class="cycling-media">
+          <div class="editorial-visual cycling-visual" aria-label="Imágenes de ciclismo de alto rendimiento">
+            <div class="photo-frame cycling-photo-one"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Carrera_ciclista._Pelot%C3%B3n_ciclista.jpg/1280px-Carrera_ciclista._Pelot%C3%B3n_ciclista.jpg" alt="Pelotón de ciclistas en una carrera de carretera" loading="lazy"></div>
+            <div class="photo-frame cycling-photo-two"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/CICLISMO_EN_RUTA.jpg/960px-CICLISMO_EN_RUTA.jpg" alt="Pelotón de ciclismo compitiendo en ruta" loading="lazy"></div>
+            <span class="visual-label">CICLISMO DE COMPETICIÓN</span>
+          </div>
+          <p class="image-credit">
+            Fotos: <a href="https://commons.wikimedia.org/wiki/File:Carrera_ciclista._Pelot%C3%B3n_ciclista.jpg" target="_blank" rel="noopener noreferrer">Juan Emilio Prades Bel (CC BY 4.0)</a> ·
+            <a href="https://commons.wikimedia.org/wiki/File:CICLISMO_EN_RUTA.jpg" target="_blank" rel="noopener noreferrer">PEPE GADEIRAS (CC BY-SA 4.0)</a>.
+          </p>
         </div>
       </div>
 
