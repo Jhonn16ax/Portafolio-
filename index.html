@@ -3,408 +3,315 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="Portafolio académico y profesional de Jhonn, estudiante de Ingeniería en Computación. Proyectos web, desarrollo con JavaScript y experiencias con Supabase y Vercel.">
-  <title>Jhonn | Ingeniería en Computación</title>
+  <meta name="theme-color" content="#0b1422">
+  <meta name="description" content="Portafolio de Jhonn, estudiante de Ingeniería en Computación en la USFQ. Conoce su perfil, conocimientos técnicos y proyectos de desarrollo web.">
+  <title>Jhonn | Portafolio de Ingeniería en Computación</title>
   <style>
     :root {
-      --bg: #0b1220;
-      --bg2: #101b2d;
-      --panel: #142238;
-      --panel2: #182a43;
-      --ink: #eef4fb;
-      --muted: #a8b8cb;
-      --dim: #73879f;
-      --line: rgba(190, 211, 235, .15);
-      --blue: #63a8ff;
-      --cyan: #65e0e7;
-      --green: #a9e6ba;
-      --max: 1120px;
-      --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+      --bg: #0b1422;
+      --bg-soft: #101d2f;
+      --panel: #13243a;
+      --panel-2: #182c45;
+      --text: #f2f6fb;
+      --muted: #a9b8ca;
+      --dim: #71849c;
+      --line: rgba(191, 213, 236, .14);
+      --blue: #69a9ff;
+      --cyan: #6ce0e6;
+      --green: #b9e6c8;
+      --max: 1160px;
       --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
     }
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
     body {
-      margin: 0; overflow-x: hidden; color: var(--ink); background:
-      radial-gradient(circle at 82% 8%, rgba(55,119,190,.15), transparent 27rem),
-      radial-gradient(circle at 0% 46%, rgba(49,121,155,.09), transparent 30rem),
-      var(--bg);
+      margin: 0; color: var(--text); overflow-x: hidden;
+      background: radial-gradient(circle at 85% 5%, rgba(69,138,210,.13), transparent 26rem),
+                  radial-gradient(circle at 0% 60%, rgba(66,181,193,.07), transparent 30rem), var(--bg);
       font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased;
     }
-    ::selection { color: #07111d; background: var(--cyan); }
+    ::selection { color: #071322; background: var(--cyan); }
     a { color: inherit; text-decoration: none; }
-    .wrap { width: min(var(--max), calc(100% - 56px)); margin: 0 auto; }
-    .topbar {
-      position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line);
-      background: rgba(11,18,32,.88); backdrop-filter: blur(18px);
-    }
-    .navrow { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
-    .brand { display: flex; align-items: center; gap: 11px; font-weight: 850; letter-spacing: .04em; }
-    .brand-icon {
-      width: 38px; height: 38px; display: grid; place-items: center; border-radius: 10px;
-      color: #071322; background: linear-gradient(135deg,var(--cyan),var(--blue));
-      font-weight: 950; font-size: .88rem; box-shadow: 0 5px 22px rgba(99,168,255,.19);
-    }
-    .brand-name { font-size: .88rem; }
-    .brand-name small { display: block; color: var(--dim); font: .53rem var(--mono); letter-spacing: .14em; }
-    .navlinks { display: flex; align-items: center; gap: clamp(14px, 2.7vw, 32px); }
-    .navlinks a { color: var(--muted); font-size: .78rem; font-weight: 650; transition: color .2s; }
+    .wrap { width: min(var(--max), calc(100% - 56px)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: rgba(11,20,34,.9); backdrop-filter: blur(17px); }
+    .navrow { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 850; letter-spacing: .07em; }
+    .brand-icon { width: 39px; height: 39px; display: grid; place-items: center; border-radius: 10px; color: #071522; background: linear-gradient(135deg,var(--cyan),var(--blue)); font-size: .9rem; font-weight: 950; box-shadow: 0 6px 25px rgba(105,169,255,.18); }
+    .brand-copy { display: block; font-size: .82rem; line-height: 1.2; }
+    .brand-copy small { display: block; margin-top: 3px; color: var(--dim); font: .5rem var(--mono); letter-spacing: .13em; }
+    .navlinks { display: flex; align-items: center; gap: clamp(14px,2.5vw,29px); }
+    .navlinks a { color: var(--muted); font-size: .76rem; font-weight: 650; transition: color .2s; }
     .navlinks a:hover { color: var(--cyan); }
-    .nav-github { padding: 9px 13px; border: 1px solid var(--line); border-radius: 7px; font: .69rem var(--mono); color: var(--ink); }
-    .nav-github span { color: var(--cyan); margin-left: 6px; }
-    .hero { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 60px; padding: 86px 0 70px; }
-    .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--cyan); font: .66rem var(--mono); letter-spacing: .13em; text-transform: uppercase; }
-    .eyebrow:before { content: ""; width: 26px; height: 1px; background: var(--cyan); }
+    .github-cta { display: inline-flex; align-items: center; gap: 9px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 7px; font: .65rem var(--mono); transition: border-color .2s,background .2s; }
+    .github-cta span { color: var(--cyan); }
+    .github-cta:hover { border-color: rgba(108,224,230,.45); background: rgba(108,224,230,.05); }
+
+    .hero { display: grid; grid-template-columns: 1.03fr .97fr; align-items: center; gap: 50px; padding: 76px 0 62px; }
+    .eyebrow,.section-kicker,.mono,.project-overline,.tag,.hero-meta,.footer-meta { font-family: var(--mono); }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--cyan); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow:before { content: ""; width: 27px; height: 1px; background: var(--cyan); }
     h1,h2,h3,p { margin-top: 0; }
-    h1 { margin: 22px 0 20px; font-size: clamp(2.8rem,5.5vw,4.7rem); line-height: 1.04; letter-spacing: -.065em; font-weight: 830; }
+    h1 { margin: 21px 0 19px; font-size: clamp(2.8rem,5.2vw,4.65rem); line-height: 1.04; letter-spacing: -.068em; font-weight: 850; }
     h1 span { color: var(--cyan); }
-    .hero-lead { max-width: 590px; color: var(--muted); font-size: 1rem; line-height: 1.9; }
-    .hero-lead strong { color: var(--ink); font-weight: 750; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 29px; }
-    .btn {
-      min-height: 45px; display: inline-flex; align-items: center; justify-content: center; gap: 12px;
-      padding: 10px 15px; border: 1px solid transparent; border-radius: 7px; font-size: .73rem;
-      font-weight: 800; transition: transform .2s, background .2s, border-color .2s;
-    }
+    .hero-subtitle { margin: 0 0 15px; color: #d5e3f2; font-size: 1rem; font-weight: 700; }
+    .hero-description { max-width: 570px; margin: 0; color: var(--muted); font-size: .93rem; line-height: 1.9; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 27px; }
+    .btn { min-height: 45px; display: inline-flex; align-items: center; justify-content: center; gap: 11px; padding: 10px 15px; border: 1px solid transparent; border-radius: 7px; font-size: .69rem; font-weight: 850; transition: transform .2s,background .2s,border-color .2s; }
     .btn:hover { transform: translateY(-2px); }
-    .btn-primary { color: #061321; background: linear-gradient(110deg,var(--cyan),var(--blue)); }
-    .btn-outline { color: var(--ink); border-color: var(--line); background: rgba(255,255,255,.025); }
-    .btn-outline:hover { border-color: rgba(101,224,231,.45); }
-    .hero-note { display: flex; align-items: center; gap: 10px; margin-top: 35px; color: var(--dim); font: .62rem var(--mono); letter-spacing: .08em; }
-    .hero-note i { width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px rgba(169,230,186,.7); }
-    .code-window {
-      position: relative; overflow: hidden; border: 1px solid rgba(138,183,226,.22); border-radius: 14px;
-      background: linear-gradient(145deg,rgba(25,43,67,.96),rgba(13,25,42,.98));
-      box-shadow: 0 28px 80px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
-      transform: perspective(1000px) rotateY(-3deg);
-    }
-    .window-bar { height: 45px; display: flex; align-items: center; gap: 7px; padding: 0 15px; border-bottom: 1px solid var(--line); color: var(--dim); font: .61rem var(--mono); }
-    .window-dot { width: 7px; height: 7px; border-radius: 50%; background: #66819e; }
-    .window-file { margin-left: auto; }
-    .code-body { padding: 25px 22px 27px; font: clamp(.68rem,1vw,.78rem)/2 var(--mono); white-space: nowrap; }
-    .code-line { display: flex; gap: 17px; }
-    .line-no { width: 15px; color: #50657e; text-align: right; user-select: none; }
-    .code-blue { color: #83baff; }.code-cyan { color: #75e2e4; }.code-green { color: #b6e6a6; }
-    .code-pink { color: #e8a8ce; }.code-white { color: #e6edf7; }.code-muted { color: #8297b0; }
-    .window-footer { display: flex; justify-content: space-between; padding: 11px 17px; border-top: 1px solid var(--line); color: var(--dim); font: .55rem var(--mono); }
-    .section { padding: 74px 0; }
-    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 29px; }
-    .section-kicker { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--cyan); font: .62rem var(--mono); letter-spacing: .13em; }
+    .btn-primary { color: #071523; background: linear-gradient(110deg,var(--cyan),var(--blue)); box-shadow: 0 8px 25px rgba(89,178,227,.14); }
+    .btn-primary:hover { filter: brightness(1.08); }
+    .btn-outline { color: var(--text); border-color: var(--line); background: rgba(255,255,255,.025); }
+    .btn-outline:hover { border-color: rgba(108,224,230,.45); }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 19px; margin-top: 31px; color: var(--dim); font-size: .57rem; letter-spacing: .08em; }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
+    .meta-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 10px rgba(185,230,200,.5); }
+    .hero-visual { position: relative; min-width: 0; overflow: hidden; border: 1px solid rgba(130,188,227,.2); border-radius: 14px; background: #12243a; box-shadow: 0 24px 65px rgba(0,0,0,.22); }
+    .hero-visual img { display: block; width: 100%; aspect-ratio: 900 / 620; object-fit: cover; }
+    .visual-caption { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 11px 14px; color: var(--muted); border-top: 1px solid var(--line); font: .52rem var(--mono); letter-spacing: .08em; }
+    .visual-caption span:first-child { color: var(--cyan); }
+
+    .section { padding: 68px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 26px; }
+    .section-kicker { display: flex; align-items: center; gap: 10px; margin-bottom: 11px; color: var(--cyan); font-size: .59rem; letter-spacing: .13em; }
     .section-kicker b { color: var(--blue); font-weight: 500; }
-    h2 { margin: 0; font-size: clamp(2rem,4vw,3.15rem); line-height: 1.12; letter-spacing: -.06em; font-weight: 820; }
-    .section-summary { max-width: 370px; margin: 0 0 4px; color: var(--muted); font-size: .82rem; line-height: 1.8; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start; }
-    .about-statement { color: var(--ink); font-size: clamp(1.45rem,2.7vw,2.15rem); font-weight: 720; letter-spacing: -.045em; line-height: 1.35; }
-    .about-statement em { color: var(--cyan); font-style: normal; }
-    .about-copy p { margin-bottom: 13px; color: var(--muted); font-size: .88rem; line-height: 1.9; }
-    .about-copy strong { color: var(--ink); }
-    .traits { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-    .traits span { padding: 6px 10px; border: 1px solid var(--line); border-radius: 5px; color: #bcd0e3; font: .59rem var(--mono); }
-    .skills-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 13px; }
-    .skill-card { min-height: 148px; padding: 18px; border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(145deg,rgba(24,42,66,.82),rgba(15,29,47,.85)); }
-    .skill-icon { width: 34px; height: 34px; display: grid; place-items: center; margin-bottom: 16px; border: 1px solid rgba(101,224,231,.2); border-radius: 8px; color: var(--cyan); background: rgba(101,224,231,.06); font: .8rem var(--mono); }
-    .skill-card h3 { margin: 0 0 5px; font-size: .89rem; }
-    .skill-card p { margin: 0; color: var(--dim); font-size: .7rem; line-height: 1.65; }
-    .skills-disclaimer { margin: 14px 0 0; color: var(--dim); font-size: .68rem; }
-    .projects { display: grid; gap: 17px; }
-    .project {
-      display: grid; grid-template-columns: .83fr 1.17fr; gap: 30px; align-items: center;
-      padding: 20px; border: 1px solid var(--line); border-radius: 13px;
-      background: linear-gradient(120deg,rgba(21,39,62,.9),rgba(13,26,43,.95));
-    }
-    .project-visual { position: relative; min-height: 270px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; border: 1px solid rgba(255,255,255,.08); border-radius: 9px; }
-    .velocity-visual { background: radial-gradient(circle at 70% 23%,rgba(253,215,130,.32),transparent 20%),linear-gradient(145deg,#214d6b,#183a57 57%,#10273c); }
-    .rivals-visual { background: radial-gradient(circle at 18% 25%,rgba(101,224,231,.22),transparent 22%),linear-gradient(145deg,#263d5b,#172c46 60%,#101d31); }
-    .visual-meta,.visual-bottom { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 10px; padding: 13px; color: rgba(237,247,255,.65); font: .53rem var(--mono); letter-spacing: .09em; }
-    .visual-meta span:first-child { color: var(--cyan); }
-    .visual-bottom { color: var(--ink); font-size: .61rem; font-weight: 700; }
-    .runner-sky { position: absolute; inset: 35px 0 34px; overflow: hidden; }
-    .runner-sun { position: absolute; top: 16%; right: 16%; width: 53px; height: 53px; border-radius: 50%; background: #f5d88a; box-shadow: 0 0 40px rgba(245,216,138,.35); }
-    .runner-hill { position: absolute; bottom: 20%; width: 80%; height: 57%; border-radius: 50% 50% 0 0; }
-    .hill-a { left: -25%; background: #2b7868; }.hill-b { right: -30%; bottom: 17%; background: #3c926c; }
-    .runner-ground { position: absolute; bottom: 0; width: 100%; height: 23%; border-top: 6px solid #d1b97c; background: repeating-linear-gradient(90deg,#1d374c 0 48px,#24435a 49px 96px); }
-    .runner-ring { position: absolute; z-index: 2; top: 43%; left: 49%; width: 27px; height: 27px; border: 7px solid #f3d45c; border-radius: 50%; box-shadow: 0 0 14px rgba(243,212,92,.45); }
-    .runner-ring.r2 { top: 55%; left: 68%; transform: scale(.8); }
-    .runner-gem { position: absolute; z-index: 3; top: 33%; right: 14%; width: 18px; height: 18px; transform: rotate(45deg); background: #76efe3; }
-    .runner-person { position: absolute; z-index: 3; bottom: 15%; left: 24%; width: 52px; height: 82px; }
-    .runner-person:before { content: ""; position: absolute; top: 0; left: 13px; width: 30px; height: 29px; border: 3px solid #102137; border-radius: 50%; background: #5bd9e8; }
-    .runner-person:after { content: ""; position: absolute; top: 28px; left: 11px; width: 33px; height: 39px; border: 3px solid #102137; border-radius: 10px; background: #237eae; }
-    .crate { position: absolute; z-index: 3; right: 12%; bottom: 15%; width: 38px; height: 39px; border: 4px solid #12283e; background: repeating-linear-gradient(135deg,#efd05a 0 8px,#db5c5c 8px 16px); }
-    .race-city { position: absolute; bottom: 39%; width: 100%; height: 43%; opacity: .48; background: repeating-linear-gradient(90deg,transparent 0 19px,#83bed1 20px 39px,transparent 40px 54px); clip-path: polygon(0 55%,8% 55%,8% 20%,17% 20%,17% 60%,27% 60%,27% 0,39% 0,39% 57%,52% 57%,52% 21%,65% 21%,65% 64%,78% 64%,78% 9%,89% 9%,89% 53%,100% 53%,100% 100%,0 100%); }
-    .race-track { position: absolute; bottom: 0; left: -12%; right: -12%; height: 58%; border: 5px solid #7dd5d6; border-bottom: 0; border-radius: 48% 48% 0 0 / 38% 38% 0 0; background: repeating-linear-gradient(0deg,#1b2d44 0 24px,#233b53 25px 49px); transform: perspective(350px) rotateX(18deg); }
-    .race-track:after { content: ""; position: absolute; top: 0; bottom: 0; left: 49%; width: 4px; background: repeating-linear-gradient(0deg,#e2f0f5 0 15px,transparent 16px 33px); }
-    .mini-car { position: absolute; z-index: 3; bottom: 17%; width: 60px; height: 28px; border: 3px solid #102137; border-radius: 15px; box-shadow: 0 8px 8px rgba(0,0,0,.28); }
-    .mini-car:before { content: ""; position: absolute; top: -13px; left: 15px; width: 24px; height: 17px; border: 3px solid #102137; border-radius: 10px 10px 2px 2px; background: #2e4d64; }
-    .mini-car.one { left: 24%; background: var(--cyan); transform: rotate(-8deg); }.mini-car.two { right: 18%; bottom: 30%; background: var(--blue); transform: rotate(7deg); }
-    .project-copy { padding: 9px 4px; }
-    .project-overline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; color: var(--cyan); font: .59rem var(--mono); letter-spacing: .1em; }
-    .project-overline span:last-child { padding: 4px 7px; border: 1px solid var(--line); border-radius: 4px; color: var(--dim); font-size: .51rem; }
-    .project-copy h3 { margin: 13px 0 9px; font-size: 2.1rem; line-height: 1.1; letter-spacing: -.055em; }
-    .project-copy h3 span { color: var(--cyan); }
-    .project-copy > p { margin: 0 0 14px; color: var(--muted); font-size: .81rem; line-height: 1.83; }
-    .project-tech { margin: 0 0 12px; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .project-tech b { display: block; margin-bottom: 4px; color: var(--ink); font: .59rem var(--mono); letter-spacing: .08em; }
-    .project-tech p { margin: 0; color: var(--muted); font-size: .72rem; line-height: 1.75; }
-    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
-    .tags span { padding: 4px 7px; border: 1px solid var(--line); border-radius: 4px; color: #b5c9dd; font: .53rem var(--mono); }
-    .project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 16px; }
-    .project-links .btn { min-height: 39px; padding: 8px 11px; font-size: .61rem; }
-    .repo-link { color: var(--cyan); font-size: .7rem; font-weight: 750; }
-    .cycling-strip {
-      display: grid; grid-template-columns: auto 1fr auto; gap: 18px; align-items: center;
-      padding: 22px 24px; border: 1px solid rgba(169,230,186,.2); border-radius: 11px;
-      background: linear-gradient(100deg,rgba(41,92,86,.18),rgba(20,37,56,.68));
-    }
-    .cycling-icon { width: 47px; height: 47px; display: grid; place-items: center; border-radius: 10px; color: var(--green); background: rgba(169,230,186,.1); font-size: 1.3rem; }
-    .cycling-strip h3 { margin: 0 0 3px; font-size: .93rem; }
-    .cycling-strip p { margin: 0; color: var(--muted); font-size: .73rem; }
-    .cycling-badge { padding: 7px 10px; border: 1px solid rgba(169,230,186,.26); border-radius: 5px; color: var(--green); font: .58rem var(--mono); letter-spacing: .08em; white-space: nowrap; }
-    .closing { display: grid; grid-template-columns: 1fr auto; gap: 35px; align-items: center; padding: 33px; border: 1px solid var(--line); border-radius: 13px; background: linear-gradient(110deg,#14253c,#101b2c); }
-    .closing h2 { margin: 0 0 9px; font-size: 1.7rem; }
-    .closing p { max-width: 690px; margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.8; }
-    .closing .btn { white-space: nowrap; }
-    .footer { min-height: 82px; display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid var(--line); color: var(--dim); font: .58rem var(--mono); letter-spacing: .08em; }
-    .footer b { color: var(--ink); font-size: .75rem; letter-spacing: .13em; }
-    .footer a:last-child { color: var(--cyan); }
-    @media (max-width: 900px) {
+    h2 { margin: 0; font-size: clamp(2rem,3.7vw,3.1rem); line-height: 1.1; letter-spacing: -.06em; font-weight: 820; }
+    .section-summary { max-width: 365px; margin: 0 0 3px; color: var(--muted); font-size: .78rem; line-height: 1.85; }
+    .profile-grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: 45px; }
+    .profile-statement { color: var(--text); font-size: clamp(1.45rem,2.5vw,2rem); line-height: 1.36; font-weight: 740; letter-spacing: -.045em; }
+    .profile-statement em { color: var(--cyan); font-style: normal; }
+    .profile-copy p { margin: 0 0 13px; color: var(--muted); font-size: .84rem; line-height: 1.9; }
+    .profile-copy strong { color: var(--text); }
+    .strengths { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+    .strengths span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 5px; color: #c2d2e3; font: .54rem var(--mono); letter-spacing: .03em; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+    .skill { min-height: 150px; padding: 17px; border: 1px solid var(--line); border-radius: 9px; background: linear-gradient(145deg,rgba(24,44,68,.85),rgba(15,29,47,.9)); transition: transform .2s,border-color .2s; }
+    .skill:hover { transform: translateY(-3px); border-color: rgba(108,224,230,.32); }
+    .skill-icon { width: 34px; height: 34px; display: grid; place-items: center; margin-bottom: 14px; border: 1px solid rgba(108,224,230,.2); border-radius: 8px; color: var(--cyan); background: rgba(108,224,230,.06); font: .7rem var(--mono); }
+    .skill h3 { margin: 0 0 5px; font-size: .85rem; }
+    .skill p { margin: 0; color: var(--dim); font-size: .68rem; line-height: 1.65; }
+    .skills-note { margin: 13px 0 0; color: var(--dim); font-size: .65rem; }
+
+    .projects { display: grid; gap: 16px; }
+    .project { display: grid; grid-template-columns: .84fr 1.16fr; gap: 28px; align-items: center; padding: 19px; border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(120deg,rgba(21,39,62,.92),rgba(13,26,43,.96)); }
+    .project-visual { position: relative; min-height: 270px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); border-radius: 8px; background: #142c46; }
+    .project-visual img { display: block; width: 100%; height: 270px; object-fit: cover; }
+    .project-label { position: absolute; top: 11px; left: 11px; padding: 5px 8px; border: 1px solid rgba(220,241,255,.22); border-radius: 4px; color: #dcefff; background: rgba(8,19,33,.75); font: .5rem var(--mono); letter-spacing: .09em; }
+    .project-copy { padding: 7px 4px; }
+    .project-overline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; color: var(--cyan); font-size: .55rem; letter-spacing: .1em; }
+    .project-overline span:last-child { padding: 4px 7px; border: 1px solid var(--line); border-radius: 4px; color: var(--dim); font-size: .48rem; }
+    .project h3 { margin: 12px 0 9px; font-size: 2rem; line-height: 1.1; letter-spacing: -.05em; }
+    .project h3 span { color: var(--cyan); }
+    .project-description { margin: 0 0 14px; color: var(--muted); font-size: .79rem; line-height: 1.85; }
+    .project-detail { padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .project-detail b { display: block; margin-bottom: 4px; color: var(--text); font: .56rem var(--mono); letter-spacing: .1em; }
+    .project-detail p { margin: 0; color: var(--muted); font-size: .69rem; line-height: 1.8; }
+    .project-detail code { color: var(--cyan); font: .94em var(--mono); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags span { padding: 4px 7px; border: 1px solid var(--line); border-radius: 4px; color: #b9cde1; font: .51rem var(--mono); }
+    .project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 15px; }
+    .project-links .btn { min-height: 38px; padding: 8px 11px; font-size: .58rem; }
+    .repo-link { color: var(--cyan); font-size: .67rem; font-weight: 750; }
+
+    .cycling-compact { display: grid; grid-template-columns: auto 1fr auto; gap: 17px; align-items: center; padding: 19px 21px; border: 1px solid rgba(185,230,200,.19); border-radius: 10px; background: linear-gradient(100deg,rgba(40,85,75,.18),rgba(20,37,56,.74)); }
+    .cycling-icon { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 9px; color: var(--green); background: rgba(185,230,200,.09); font-size: 1.2rem; }
+    .cycling-copy h3 { margin: 0 0 4px; font-size: .94rem; }
+    .cycling-copy p { max-width: 690px; margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.75; }
+    .cycling-results { min-width: 205px; padding: 10px 12px; border: 1px solid rgba(185,230,200,.19); border-radius: 7px; background: rgba(8,19,31,.32); }
+    .cycling-results small { display: block; color: var(--green); font: .48rem var(--mono); letter-spacing: .08em; }
+    .cycling-results strong { display: block; margin: 3px 0; font-size: .8rem; }
+    .cycling-results span { color: var(--muted); font-size: .6rem; }
+
+    .closing { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; padding: 27px 30px; border: 1px solid var(--line); border-radius: 11px; background: linear-gradient(110deg,#162a43,#101d30); }
+    .closing h2 { margin-bottom: 8px; font-size: 1.55rem; }
+    .closing p { max-width: 700px; margin: 0; color: var(--muted); font-size: .76rem; line-height: 1.8; }
+    .footer { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 15px; border-top: 1px solid var(--line); color: var(--dim); font: .54rem var(--mono); letter-spacing: .08em; }
+    .footer b { color: var(--text); font-size: .74rem; letter-spacing: .12em; }
+    .footer a { color: var(--cyan); }
+    @media (max-width: 920px) {
       .wrap { width: min(var(--max),calc(100% - 42px)); }
-      .hero { gap: 30px; grid-template-columns: 1fr .9fr; }
+      .hero { gap: 28px; }
       .skills-grid { grid-template-columns: repeat(2,1fr); }
-      .project { gap: 20px; grid-template-columns: .8fr 1.2fr; }
+      .project { grid-template-columns: .8fr 1.2fr; gap: 20px; }
+      .cycling-compact { grid-template-columns: auto 1fr; }
+      .cycling-results { grid-column: 2; justify-self: start; }
     }
     @media (max-width: 680px) {
       .wrap { width: calc(100% - 32px); }
-      .navrow { min-height: 70px; flex-wrap: wrap; padding: 11px 0; }
-      .navlinks { order: 3; width: 100%; justify-content: space-between; gap: 9px; padding: 3px 0 6px; }
-      .navlinks a { font-size: .68rem; }
-      .hero { grid-template-columns: 1fr; gap: 30px; padding: 53px 0 48px; }
-      h1 { font-size: clamp(2.85rem,10vw,4.2rem); }
-      .code-window { transform: none; }
-      .code-body { font-size: .72rem; }
-      .section { padding: 58px 0; }
-      .section-head { align-items: flex-start; flex-direction: column; gap: 11px; }
-      .about-grid { grid-template-columns: 1fr; gap: 18px; }
-      .project { grid-template-columns: 1fr; padding: 14px; gap: 18px; }
-      .project-visual { min-height: 250px; }
-      .project-copy { padding: 0 3px 4px; }
-      .cycling-strip { grid-template-columns: auto 1fr; }
-      .cycling-badge { grid-column: 2; justify-self: start; }
-      .closing { grid-template-columns: 1fr; padding: 23px; gap: 18px; }
+      .navrow { min-height: 70px; flex-wrap: wrap; padding: 10px 0; }
+      .navlinks { order: 3; width: 100%; justify-content: space-between; gap: 8px; padding-bottom: 5px; }
+      .navlinks a { font-size: .66rem; }
+      .hero { grid-template-columns: 1fr; gap: 25px; padding: 50px 0 38px; }
+      h1 { font-size: clamp(2.9rem,10vw,4.15rem); }
+      .hero-description { font-size: .86rem; }
+      .hero-visual { max-width: 560px; }
+      .section { padding: 55px 0; }
+      .section-head { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .profile-grid { grid-template-columns: 1fr; gap: 17px; }
+      .project { grid-template-columns: 1fr; padding: 14px; gap: 17px; }
+      .project-visual,.project-visual img { min-height: 0; height: auto; aspect-ratio: 1.55 / 1; }
+      .cycling-compact { grid-template-columns: auto 1fr; padding: 16px; gap: 12px; }
+      .cycling-results { grid-column: 1 / -1; margin-left: 55px; }
+      .closing { grid-template-columns: 1fr; gap: 16px; padding: 22px; }
       .closing .btn { justify-self: start; }
     }
     @media (max-width: 430px) {
       .wrap { width: calc(100% - 26px); }
-      .nav-github { padding: 8px 9px; font-size: .61rem; }
-      .hero { padding-top: 42px; }
-      h1 { font-size: 2.75rem; }
-      .hero-lead { font-size: .88rem; }
-      .btn { min-height: 42px; padding: 9px 11px; font-size: .63rem; }
-      .code-body { padding: 19px 13px; font-size: .62rem; }
-      .section-summary { font-size: .76rem; }
+      .navlinks a { font-size: .61rem; }
+      .github-cta { padding: 8px 9px; font-size: .58rem; }
+      h1 { font-size: 2.7rem; }
+      .hero-subtitle { font-size: .9rem; }
+      .hero-description { font-size: .81rem; }
+      .btn { min-height: 42px; padding: 9px 11px; font-size: .61rem; }
+      .hero-meta { gap: 11px; font-size: .5rem; }
       .skills-grid { gap: 8px; }
-      .skill-card { min-height: 137px; padding: 14px; }
-      .project-copy h3 { font-size: 1.9rem; }
-      .cycling-strip { padding: 17px; gap: 12px; }
-      .cycling-badge { font-size: .5rem; }
-      .footer { flex-wrap: wrap; padding: 20px 0; }
+      .skill { min-height: 137px; padding: 13px; }
+      .project h3 { font-size: 1.8rem; }
+      .project-links { align-items: flex-start; flex-direction: column; }
+      .footer { flex-wrap: wrap; padding: 18px 0; }
       .footer span { order: 3; width: 100%; }
     }
-    @media (prefers-reduced-motion: reduce) {
-      *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
-    }
-  
-    .tech-hero-visual {
-      position: relative; min-width: 0; overflow: hidden; border: 1px solid rgba(117,190,229,.24);
-      border-radius: 15px; background: linear-gradient(145deg,#173958,#0b192c);
-      box-shadow: 0 28px 80px rgba(0,0,0,.26),0 0 55px rgba(76,182,231,.08);
-    }
-    .tech-hero-visual img { display: block; width: 100%; aspect-ratio: 900 / 620; object-fit: cover; }
-    .tech-image-label,.tech-image-footer {
-      position: absolute; z-index: 2; right: 0; left: 0; display: flex; justify-content: space-between; gap: 10px;
-      padding: 12px 14px; color: rgba(231,245,255,.8); font: .5rem var(--mono); letter-spacing: .09em;
-      background: linear-gradient(180deg,rgba(8,18,32,.78),transparent);
-    }
-    .tech-image-label { top: 0; }
-    .tech-image-label span:first-child { color: var(--cyan); }
-    .tech-image-footer { bottom: 0; color: #d6e5f4; background: linear-gradient(0deg,rgba(8,18,32,.9),transparent); }
-    .project-art-image {
-      position: absolute; top: 36px; right: 0; bottom: 34px; left: 0; display: block;
-      width: 100%; height: calc(100% - 70px); object-fit: cover;
-    }
-    .cycling-section { padding-top: 18px; }
-    .cycling-strip {
-      display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 19px; align-items: center;
-      padding: 23px 24px; border: 1px solid rgba(169,230,186,.19); border-radius: 11px;
-      background: linear-gradient(105deg,rgba(29,74,75,.19),rgba(20,37,56,.76));
-    }
-    .cycling-icon {
-      width: 48px; height: 48px; display: grid; place-items: center; border-radius: 10px;
-      color: var(--green); background: rgba(169,230,186,.1); font-size: 1.35rem;
-    }
-    .cycling-copy .section-kicker { margin: 0 0 5px; font-size: .55rem; }
-    .cycling-copy h2 { margin: 0 0 5px; font-size: 1.08rem; letter-spacing: -.025em; }
-    .cycling-copy p { max-width: 650px; margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.75; }
-    .cycling-achievement {
-      min-width: 205px; padding: 12px 14px; border: 1px solid rgba(169,230,186,.2); border-radius: 8px;
-      background: rgba(8,19,31,.35);
-    }
-    .cycling-achievement > span { display: block; color: var(--green); font: .49rem var(--mono); letter-spacing: .08em; }
-    .cycling-achievement strong { display: block; margin: 5px 0 3px; color: var(--ink); font-size: .82rem; }
-    .cycling-achievement div { color: var(--muted); font-size: .61rem; }
-    .cycling-achievement b { color: var(--green); font-size: .85rem; }
-    .cycling-achievement i { padding: 0 4px; color: var(--dim); font-style: normal; }
-    @media (max-width: 900px) {
-      .cycling-strip { grid-template-columns: auto minmax(0,1fr); }
-      .cycling-achievement { grid-column: 2; justify-self: start; }
-    }
-    @media (max-width: 680px) {
-      .tech-image-label,.tech-image-footer { font-size: .43rem; padding: 9px; }
-      .cycling-strip { grid-template-columns: auto minmax(0,1fr); padding: 16px; gap: 12px; }
-      .cycling-achievement { grid-column: 1 / -1; margin-left: 60px; }
-      .cycling-copy h2 { font-size: 1rem; }
-      .cycling-copy p { font-size: .67rem; }
-    }
-
-</style>
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
 </head>
 <body>
   <header class="topbar">
     <div class="wrap navrow">
-      <a class="brand" href="#inicio">
+      <a class="brand" href="#inicio" aria-label="Inicio">
         <span class="brand-icon">JH</span>
-        <span class="brand-name">JHONN<small>INGENIERÍA EN COMPUTACIÓN</small></span>
+        <span class="brand-copy">JHONN<small>INGENIERÍA EN COMPUTACIÓN</small></span>
       </a>
       <nav class="navlinks" aria-label="Navegación principal">
         <a href="#perfil">Perfil</a>
-        <a href="#habilidades">Habilidades</a>
+        <a href="#conocimientos">Conocimientos</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#ciclismo">Ciclismo</a>
       </nav>
-      <a class="nav-github" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
+      <a class="github-cta" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
     </div>
   </header>
 
   <main class="wrap" id="inicio">
     <section class="hero">
-      <div>
-        <div class="eyebrow">ESTUDIANTE DE INGENIERÍA EN COMPUTACIÓN</div>
+      <div class="hero-copy">
+        <div class="eyebrow">PORTAFOLIO ACADÉMICO Y PROFESIONAL</div>
         <h1>Desarrollo ideas.<br><span>Construyo soluciones.</span></h1>
-        <p class="hero-lead">Soy <strong>Jhonn</strong>, estudiante de Ingeniería en Computación en la USFQ, interesado en el desarrollo web y la creación de aplicaciones interactivas. Me motiva aprender nuevas tecnologías, resolver problemas y convertir ideas en proyectos funcionales.</p>
+        <p class="hero-subtitle">Jhonn · Estudiante de Ingeniería en Computación | USFQ</p>
+        <p class="hero-description">Me interesa el desarrollo de software, la programación y la creación de aplicaciones web interactivas. Disfruto analizar problemas, aprender nuevas herramientas y transformar ideas en proyectos funcionales.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#proyectos">CONOCER MIS PROYECTOS <span>↘</span></a>
-          <a class="btn btn-outline" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">VISITAR GITHUB <span>↗</span></a>
+          <a class="btn btn-primary" href="#proyectos">VER PROYECTOS <span>↘</span></a>
+          <a class="btn btn-outline" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">VISITAR GITHUB ↗</a>
         </div>
-        <div class="hero-note"><i></i> RESPONSABILIDAD · APRENDIZAJE CONTINUO · COMPROMISO</div>
+        <div class="hero-meta">
+          <span><i class="meta-dot"></i> RESPONSABILIDAD</span>
+          <span>APRENDIZAJE CONTINUO</span>
+          <span>COMPROMISO</span>
+        </div>
       </div>
-
-      <div class="tech-hero-visual">
-        <div class="tech-image-label"><span>DESARROLLO DE SOFTWARE</span><span>IDEAS → CÓDIGO → SOLUCIONES</span></div>
-        <img src="img/desarrollo-software.svg" alt="Ilustración de una computadora con código y una interfaz web en desarrollo">
-        <div class="tech-image-footer"><span>PROGRAMACIÓN</span><span>DESARROLLO WEB</span><span>CREATIVIDAD</span></div>
+      <div class="hero-visual">
+        <img src="img/desarrollo-software.svg" alt="Ilustración de una computadora con código e interfaz digital">
+        <div class="visual-caption"><span>DESARROLLO DE SOFTWARE</span><span>IDEAS · CÓDIGO · SOLUCIONES</span></div>
       </div>
     </section>
 
     <section class="section" id="perfil">
       <div class="section-head">
-        <div><div class="section-kicker"><b>01</b> / PERFIL</div><h2>Un perfil en formación,<br>con ganas de aportar.</h2></div>
-        <p class="section-summary">Mi objetivo es seguir desarrollando mis conocimientos y aportar responsabilidad, dedicación y pensamiento lógico a cada reto.</p>
+        <div><div class="section-kicker"><b>01</b> / PERFIL</div><h2>Formación con enfoque<br>en resolver problemas.</h2></div>
+        <p class="section-summary">Una presentación de mi formación, mi manera de trabajar y los conocimientos que estoy desarrollando.</p>
       </div>
-      <div class="about-grid">
-        <div class="about-statement">Me interesa la tecnología porque permite transformar <em>problemas en soluciones.</em></div>
-        <div class="about-copy">
-          <p>Actualmente estudio <strong>Ingeniería en Computación en la Universidad San Francisco de Quito</strong>. A través de mis proyectos académicos he trabajado con páginas web, lógica de programación, interactividad y comunicación entre usuarios en línea.</p>
-          <p>Me considero una persona responsable, organizada y comprometida con lo que hago. Me gusta aprender de los errores, buscar soluciones y cumplir los objetivos que me propongo, tanto individualmente como al colaborar con otras personas.</p>
-          <div class="traits"><span>RESPONSABILIDAD</span><span>TRABAJO EN EQUIPO</span><span>RESOLUCIÓN DE PROBLEMAS</span><span>APRENDIZAJE CONTINUO</span></div>
+      <div class="profile-grid">
+        <div class="profile-statement">Me interesa crear tecnología útil a través de <em>la lógica, el diseño y la programación.</em></div>
+        <div class="profile-copy">
+          <p>Actualmente estudio <strong>Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)</strong>. En mis proyectos académicos he trabajado en páginas web, videojuegos, interactividad y comunicación entre usuarios en línea.</p>
+          <p>Me considero una persona responsable, organizada y comprometida con las tareas que asumo. Me gusta comprender los problemas, probar alternativas y aprender de los errores para mejorar el resultado. También valoro la comunicación y el trabajo bien hecho.</p>
+          <div class="strengths"><span>RESPONSABILIDAD</span><span>ORGANIZACIÓN</span><span>RESOLUCIÓN DE PROBLEMAS</span><span>APRENDIZAJE CONTINUO</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="habilidades">
+    <section class="section" id="conocimientos">
       <div class="section-head">
-        <div><div class="section-kicker"><b>02</b> / CONOCIMIENTOS</div><h2>Tecnologías que he<br>utilizado en mis proyectos.</h2></div>
-        <p class="section-summary">Herramientas y tecnologías con las que he comenzado a construir y publicar aplicaciones web.</p>
+        <div><div class="section-kicker"><b>02</b> / CONOCIMIENTOS TÉCNICOS</div><h2>Herramientas que he<br>utilizado en mis proyectos.</h2></div>
+        <p class="section-summary">Tecnologías y plataformas aplicadas en ejercicios y proyectos académicos. Continúo fortaleciendo estos conocimientos.</p>
       </div>
       <div class="skills-grid">
-        <article class="skill-card"><div class="skill-icon">HTML</div><h3>HTML5</h3><p>Estructura y organización del contenido de páginas web.</p></article>
-        <article class="skill-card"><div class="skill-icon">CSS</div><h3>CSS3</h3><p>Estilos, distribución visual y adaptación a distintos tamaños de pantalla.</p></article>
-        <article class="skill-card"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Lógica, eventos, interacciones y comportamiento de aplicaciones web.</p></article>
-        <article class="skill-card"><div class="skill-icon">DB</div><h3>Supabase</h3><p>Uso de Realtime y almacenamiento de resultados en una tabla.</p></article>
-        <article class="skill-card"><div class="skill-icon">▲</div><h3>Vercel</h3><p>Publicación y despliegue de proyectos web.</p></article>
-        <article class="skill-card"><div class="skill-icon">GH</div><h3>GitHub</h3><p>Repositorios, control de versiones y publicación con Pages.</p></article>
-        <article class="skill-card"><div class="skill-icon">2D</div><h3>Canvas 2D</h3><p>Gráficos e interacción visual para experiencias de juego.</p></article>
-        <article class="skill-card"><div class="skill-icon">UI</div><h3>Diseño adaptable</h3><p>Organización de interfaces para computadora y dispositivos móviles.</p></article>
+        <article class="skill"><div class="skill-icon">HTML</div><h3>HTML5</h3><p>Estructura y organización de contenido web.</p></article>
+        <article class="skill"><div class="skill-icon">CSS</div><h3>CSS3</h3><p>Estilos, distribución visual y diseño adaptable.</p></article>
+        <article class="skill"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Lógica, eventos e interactividad en el navegador.</p></article>
+        <article class="skill"><div class="skill-icon">DB</div><h3>Supabase</h3><p>Realtime y almacenamiento de resultados en tablas.</p></article>
+        <article class="skill"><div class="skill-icon">▲</div><h3>Vercel</h3><p>Despliegue y publicación de aplicaciones web.</p></article>
+        <article class="skill"><div class="skill-icon">GH</div><h3>GitHub</h3><p>Repositorios y publicación de sitios con Pages.</p></article>
+        <article class="skill"><div class="skill-icon">2D</div><h3>Canvas 2D</h3><p>Representación gráfica para videojuegos 2D.</p></article>
+        <article class="skill"><div class="skill-icon">UI</div><h3>Interfaces web</h3><p>Diseño de pantallas e interacción adaptable.</p></article>
       </div>
-      <p class="skills-disclaimer">Estas son tecnologías que he aplicado en proyectos académicos y personales; continúo ampliando mis conocimientos.</p>
+      <p class="skills-note">Los conocimientos descritos corresponden a herramientas utilizadas en mis proyectos académicos; no representan certificaciones profesionales.</p>
     </section>
 
     <section class="section" id="proyectos">
       <div class="section-head">
-        <div><div class="section-kicker"><b>03</b> / PORTAFOLIO</div><h2>Proyectos seleccionados.</h2></div>
-        <p class="section-summary">Ejemplos de cómo aplico la programación para crear experiencias interactivas y resolver retos concretos.</p>
+        <div><div class="section-kicker"><b>03</b> / PROYECTOS</div><h2>Trabajo aplicado.</h2></div>
+        <p class="section-summary">Proyectos que muestran mi experiencia práctica inicial con desarrollo web, lógica de programación e interacción entre usuarios.</p>
       </div>
       <div class="projects">
         <article class="project">
-          <div class="project-visual velocity-visual">
-            <div class="visual-meta"><span>PROYECTO 01</span><span>JUEGO DE PLATAFORMAS</span></div>
-            <img class="project-art-image" src="img/velocity-run-visual.svg" alt="Ilustración del videojuego Velocity Run con un personaje y objetos para recoger">
-            <div class="visual-bottom"><span>VELOCITY RUN</span><span>RUN · JUMP · PLAY</span></div>
+          <div class="project-visual">
+            <span class="project-label">PROYECTO 01 · VIDEOJUEGO</span>
+            <img src="img/velocity-run-visual.svg" alt="Ilustración de Velocity Run, videojuego de plataformas">
           </div>
           <div class="project-copy">
-            <div class="project-overline"><span>DESARROLLO WEB / VIDEOJUEGO</span><span>PUBLICADO</span></div>
+            <div class="project-overline"><span>DESARROLLO WEB · JAVASCRIPT</span><span>PUBLICADO</span></div>
             <h3>Velocity <span>Run</span></h3>
-            <p>Videojuego de plataformas en el que el jugador debe saltar y agacharse para superar obstáculos y recoger objetos. Este proyecto me permitió trabajar la lógica del juego, los controles y la interacción en el navegador.</p>
-            <div class="project-tech"><b>IMPLEMENTACIÓN</b><p>Desarrollado con HTML, CSS y JavaScript. JavaScript controla el movimiento, las colisiones, los objetos y el puntaje. Se publica mediante GitHub Pages y funciona en el navegador; no utiliza una base de datos para guardar resultados.</p></div>
+            <p class="project-description">Videojuego de plataformas en el que el jugador salta y se agacha para esquivar obstáculos y recoger objetos. El proyecto combina diseño visual, controles y lógica de juego.</p>
+            <div class="project-detail"><b>DESARROLLO E IMPLEMENTACIÓN</b><p>Construido con HTML, CSS y JavaScript. JavaScript controla el movimiento del personaje, la aparición de obstáculos, las colisiones y el puntaje. Está publicado en GitHub Pages y la lógica se ejecuta en el navegador; no usa una base de datos para guardar resultados.</p></div>
             <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span></div>
-            <div class="project-links"><a class="btn btn-primary" href="https://jhonn16ax.github.io/proyecto/" target="_blank" rel="noopener noreferrer">ABRIR PROYECTO ↗</a><a class="repo-link" href="https://github.com/Jhonn16ax/proyecto" target="_blank" rel="noopener noreferrer">Código fuente en GitHub</a></div>
+            <div class="project-links"><a class="btn btn-primary" href="https://jhonn16ax.github.io/proyecto/" target="_blank" rel="noopener noreferrer">PROBAR PROYECTO ↗</a><a class="repo-link" href="https://github.com/Jhonn16ax/proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio</a></div>
           </div>
         </article>
 
         <article class="project">
-          <div class="project-visual rivals-visual">
-            <div class="visual-meta"><span>PROYECTO 02</span><span>JUEGO MULTIJUGADOR</span></div>
-            <img class="project-art-image" src="img/speed-rivals-visual.svg" alt="Ilustración del videojuego Speed Rivals con dos autos en una pista nocturna">
-            <div class="visual-bottom"><span>SPEED RIVALS</span><span>2 PLAYERS · ONLINE</span></div>
+          <div class="project-visual">
+            <span class="project-label">PROYECTO 02 · MULTIJUGADOR</span>
+            <img src="img/speed-rivals-visual.svg" alt="Ilustración de Speed Rivals, videojuego de carreras para dos jugadores">
           </div>
           <div class="project-copy">
-            <div class="project-overline"><span>APLICACIÓN WEB / MULTIJUGADOR</span><span>PUBLICADO</span></div>
+            <div class="project-overline"><span>APLICACIÓN WEB · TIEMPO REAL</span><span>PUBLICADO</span></div>
             <h3>Speed <span>Rivals</span></h3>
-            <p>Videojuego de carreras 2D para dos jugadores que se conectan desde distintos dispositivos. El proyecto permite compartir el estado de la carrera en línea y comparar la distancia recorrida.</p>
-            <div class="project-tech"><b>IMPLEMENTACIÓN</b><p>Construido con HTML, CSS y JavaScript. Vercel publica la aplicación; Supabase Realtime permite sincronizar a los jugadores y la tabla <code>race_results</code> almacena el ganador, la distancia, los nombres y la fecha de la carrera.</p></div>
+            <p class="project-description">Videojuego de carreras 2D para dos jugadores que se conectan desde dispositivos distintos. La aplicación comparte el estado de la carrera y permite comparar la distancia recorrida.</p>
+            <div class="project-detail"><b>DESARROLLO E IMPLEMENTACIÓN</b><p>Construido con HTML, CSS y JavaScript. Vercel publica la aplicación; Supabase Realtime sincroniza el estado de los jugadores y la tabla <code>race_results</code> almacena el ganador, la distancia, los nombres y la fecha de la carrera.</p></div>
             <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Supabase</span><span>Vercel</span></div>
-            <div class="project-links"><a class="btn btn-primary" href="https://proyecto12-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">ABRIR PROYECTO ↗</a><a class="repo-link" href="https://github.com/Jhonn16ax/proyecto12" target="_blank" rel="noopener noreferrer">Código fuente en GitHub</a></div>
+            <div class="project-links"><a class="btn btn-primary" href="https://proyecto12-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">PROBAR PROYECTO ↗</a><a class="repo-link" href="https://github.com/Jhonn16ax/proyecto12" target="_blank" rel="noopener noreferrer">Ver repositorio</a></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section cycling-section" id="ciclismo">
-      <div class="cycling-strip">
+    <section class="section" id="ciclismo">
+      <div class="section-head">
+        <div><div class="section-kicker"><b>04</b> / PERFIL PERSONAL</div><h2>Disciplina dentro y fuera<br>de la tecnología.</h2></div>
+        <p class="section-summary">Una actividad que complementa mi formación y fortalece mi manera de asumir nuevos retos.</p>
+      </div>
+      <div class="cycling-compact">
         <div class="cycling-icon" aria-hidden="true">🚴</div>
         <div class="cycling-copy">
-          <div class="section-kicker"><b>04</b> / INTERÉS PERSONAL</div>
-          <h2>El ciclismo fortalece mi disciplina.</h2>
-          <p>Fuera de la computación, practico ciclismo competitivo. Entrenar y participar en campeonatos me ha enseñado a ser constante, responsable, organizar mi tiempo y mantener el compromiso con mis metas. Esa misma actitud la aplico al estudiar, programar y resolver problemas.</p>
+          <h3>Ciclismo competitivo</h3>
+          <p>Practico ciclismo y he participado en campeonatos nacionales. En la temporada 2026 obtuve el título de campeón nacional, dos medallas de oro y dos de bronce. Esta experiencia ha fortalecido mi disciplina, constancia y responsabilidad, cualidades que también aplico a mis estudios y proyectos.</p>
         </div>
-        <div class="cycling-achievement">
-          <span>LOGROS DEPORTIVOS · TEMPORADA 2026</span>
-          <strong>Campeón nacional</strong>
-          <div><b>2</b> medallas de oro <i>·</i> <b>2</b> medallas de bronce</div>
-        </div>
+        <div class="cycling-results"><small>LOGROS · 2026</small><strong>Campeón nacional</strong><span>2 oros · 2 bronces</span></div>
       </div>
     </section>
 
     <section class="section">
       <div class="closing">
-        <div><div class="section-kicker"><b>05</b> / SIGUIENTE PASO</div><h2>Comprometido con aprender y aportar.</h2><p>Busco seguir creciendo en el área de computación, participar en nuevos retos y aplicar mis conocimientos para desarrollar soluciones útiles. Creo en el trabajo responsable, la mejora continua y el valor de aprender haciendo.</p></div>
-        <a class="btn btn-primary" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">VER MI GITHUB ↗</a>
+        <div><div class="section-kicker"><b>05</b> / OBJETIVO</div><h2>Preparado para seguir aprendiendo y aportar.</h2><p>Mi objetivo es continuar fortaleciendo mis conocimientos en computación, participar en nuevos proyectos y aportar responsabilidad, dedicación y disposición para aprender en cada oportunidad.</p></div>
+        <a class="btn btn-primary" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">VISITAR MI GITHUB ↗</a>
       </div>
     </section>
   </main>
 
   <footer class="wrap footer">
     <b>JHONN.</b>
-    <span>ESTUDIANTE DE INGENIERÍA EN COMPUTACIÓN · USFQ</span>
+    <span class="footer-meta">ESTUDIANTE DE INGENIERÍA EN COMPUTACIÓN · USFQ</span>
     <a href="#inicio">VOLVER ARRIBA ↑</a>
   </footer>
 </body>
