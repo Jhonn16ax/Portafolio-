@@ -714,6 +714,33 @@
       .cycling-photo-two{height:110px!important;width:49%;bottom:38px!important}
     }
 
+  
+    /* CAPACIDADES: ejemplos prácticos en lugar de una lista de herramientas */
+    .capability-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+    .capability-card{position:relative;isolation:isolate;display:flex;flex-direction:column;min-height:310px;overflow:hidden;padding:25px 23px 21px;border:1px solid rgba(133,184,224,.2);border-radius:18px;background:linear-gradient(145deg,rgba(23,46,74,.94),rgba(9,22,39,.98));box-shadow:0 16px 38px rgba(0,0,0,.14);transition:transform .24s,border-color .24s,box-shadow .24s}
+    .capability-card:before{content:"";position:absolute;z-index:-1;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,rgba(105,231,232,.85),rgba(139,156,255,.45),transparent)}
+    .capability-card:after{content:"";position:absolute;z-index:-1;width:170px;height:170px;right:-95px;top:85px;border-radius:50%;background:var(--cap-glow,rgba(105,231,232,.14));filter:blur(48px);opacity:.7}
+    .capability-card:hover{transform:translateY(-5px);border-color:rgba(105,231,232,.42);box-shadow:0 24px 48px rgba(0,0,0,.24)}
+    .capability-web{--cap-glow:rgba(105,231,232,.18)}
+    .capability-game{--cap-glow:rgba(139,156,255,.2)}
+    .capability-live{--cap-glow:rgba(91,205,178,.19)}
+    .capability-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:30px}
+    .capability-label{color:#92a9c3;font: .55rem var(--mono);letter-spacing:.13em}
+    .capability-symbol{width:47px;height:47px;flex:none;display:grid;place-items:center;border:1px solid rgba(105,231,232,.31);border-radius:14px;background:rgba(105,231,232,.075);color:#9af0e8;font:800 .88rem var(--mono)}
+    .capability-game .capability-symbol{color:#b3c2ff;border-color:rgba(139,156,255,.36);background:rgba(139,156,255,.09)}
+    .capability-live .capability-symbol{color:#9be8d6;border-color:rgba(91,205,178,.36);background:rgba(91,205,178,.09)}
+    .capability-card h3{max-width:270px;margin:0 0 10px;color:#f3f7fc;font-size:1.15rem;letter-spacing:-.035em;line-height:1.3}
+    .capability-card>p{margin:0 0 23px;color:#aebfd2;font-size:.76rem;line-height:1.8}
+    .capability-proof{display:grid;grid-template-columns:1fr auto;align-items:center;gap:5px 12px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(145,177,210,.15)}
+    .capability-proof>span{grid-column:1/-1;color:#7e9ab5;font: .49rem var(--mono);letter-spacing:.14em}
+    .capability-proof strong{color:#e8f4ff;font-size:.76rem}
+    .capability-proof a{color:#83e7e7;font-size:.64rem;font-weight:750}
+    .capability-proof a:hover{text-decoration:underline;text-underline-offset:4px}
+    .capability-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+    .capability-tags span{padding:5px 8px;border:1px solid rgba(131,179,218,.17);border-radius:6px;background:rgba(9,20,35,.42);color:#9eb4ca;font: .49rem var(--mono);letter-spacing:.02em}
+    @media(max-width:900px){.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.capability-card:last-child{grid-column:1/-1}}
+    @media(max-width:700px){.capability-grid{grid-template-columns:1fr;gap:12px}.capability-card:last-child{grid-column:auto}.capability-card{min-height:0;padding:22px 19px}.capability-top{margin-bottom:21px}.capability-card>p{margin-bottom:19px}}
+
   </style>
 </head>
 <body>
@@ -726,7 +753,7 @@
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#perfil">Perfil</a>
         <a href="#intereses">Intereses</a>
-        <a href="#conocimientos">Conocimientos</a>
+        <a href="#conocimientos">Capacidades</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#ciclismo">Ciclismo</a>
       </nav>
@@ -834,45 +861,60 @@
     </section>
 
     <section class="section" id="conocimientos">
-      <div class="section-head editorial-head">
-        <div class="editorial-copy">
-          <div class="section-tag"><b>03</b> / CONOCIMIENTOS TÉCNICOS</div>
-          <h2>Herramientas que he<br>utilizado en mis proyectos.</h2>
-          <p class="section-summary">Tecnologías y plataformas aplicadas en ejercicios y proyectos académicos. Continúo fortaleciendo estos conocimientos.</p>
+      <div class="section-head">
+        <div>
+          <div class="section-tag"><b>03</b> / LO QUE PUEDO HACER</div>
+          <h2>De la idea a una<br>experiencia funcional.</h2>
         </div>
-        <div class="editorial-visual tech-visual" aria-label="Imágenes de tecnología y programación">
-          <div class="photo-frame tech-photo-one"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=85" alt="Componentes electrónicos y hardware" loading="lazy"></div>
-          <div class="photo-frame tech-photo-two"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=700&q=85" alt="Pantalla con código de programación" loading="lazy"></div>
-          <div class="photo-frame tech-photo-three"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=85" alt="Equipo colaborando en tecnología" loading="lazy"></div>
-          <span class="visual-label">TECH / DIGITAL SKILLS</span>
-        </div>
+        <p class="section-summary">Más que enumerar herramientas, prefiero mostrar cómo las utilizo para construir proyectos, resolver problemas y crear experiencias digitales.</p>
       </div>
-      <div class="tech-bento">
-        <article class="tech-card" style="--glow:rgba(244,130,76,.18)"><div class="tech-icon">HTML</div><h3>HTML5</h3><p>Estructura y organización de contenido web.</p></article>
-        <article class="tech-card" style="--glow:rgba(76,139,244,.2)"><div class="tech-icon">CSS</div><h3>CSS3</h3><p>Estilos, distribución visual y diseño adaptable.</p></article>
-        <article class="tech-card" style="--glow:rgba(240,206,86,.2)"><div class="tech-icon">JS</div><h3>JavaScript</h3><p>Lógica, eventos e interactividad en el navegador.</p></article>
-        <article class="tech-card" style="--glow:rgba(69,195,173,.18)"><div class="tech-icon">DB</div><h3>Supabase</h3><p>Realtime y almacenamiento de resultados en tablas.</p></article>
-        <article class="tech-card"><div class="tech-icon">▲</div><h3>Vercel</h3><p>Despliegue y publicación de aplicaciones web.</p></article>
-        <article class="tech-card"><div class="tech-icon">GH</div><h3>GitHub</h3><p>Repositorios y publicación de sitios con Pages.</p></article>
-        <article class="tech-card"><div class="tech-icon">2D</div><h3>Canvas 2D</h3><p>Representación gráfica para videojuegos 2D.</p></article>
-        <article class="tech-card"><div class="tech-icon">UI</div><h3>Interfaces web</h3><p>Diseño de pantallas e interacción adaptable.</p></article>
-      </div>
-      <div class="tech-extra">
-        <article class="visual-feature">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="9" y="12" width="82" height="63" rx="7" fill="#102d4b" stroke="#70dfe8" stroke-width="2"/><path d="M17 25h66" stroke="#315b7d" stroke-width="3"/><circle cx="22" cy="19" r="2" fill="#f58c9d"/><circle cx="30" cy="19" r="2" fill="#f1cf74"/><rect x="18" y="34" width="24" height="32" rx="3" fill="#1f5372"/><rect x="48" y="34" width="34" height="12" rx="3" fill="#36779a"/><rect x="48" y="51" width="34" height="15" rx="3" fill="#24496e"/><path d="M38 76v8m24-8v8M28 85h44" stroke="#75b8de" stroke-width="3" stroke-linecap="round"/></svg>
-          <div><small>01 / FRONT-END</small><h3>Interfaces web</h3><p>Organización de contenido, diseño visual y adaptación de páginas para diferentes dispositivos.</p></div>
-        </article>
-        <article class="visual-feature">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="12" width="76" height="76" rx="10" fill="#0b192b" stroke="#548ab9" stroke-width="2"/><path d="m37 39-13 11 13 11m26-22 13 11-13 11m-8-28-11 34" fill="none" stroke="#72e6e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <div><small>02 / PROGRAMACIÓN</small><h3>Lógica y desarrollo</h3><p>Uso de instrucciones, eventos y funciones para dar comportamiento e interactividad a una aplicación.</p></div>
-        </article>
-        <article class="visual-feature">
-          <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#69e7e8" stroke-width="2"><path d="M50 30v15M20 72h60M20 72V57M80 72V57"/></g><rect x="32" y="10" width="36" height="21" rx="5" fill="#1e4968" stroke="#69e7e8"/><rect x="5" y="55" width="30" height="30" rx="5" fill="#142e4a" stroke="#68aaff"/><rect x="65" y="55" width="30" height="30" rx="5" fill="#142e4a" stroke="#68aaff"/><path d="M12 64h16m-16 7h16m-16 7h11m47-14h17m-17 7h17m-17 7h12" stroke="#a8c7e2" stroke-width="2" stroke-linecap="round"/></svg>
-          <div><small>03 / SERVICIOS CONECTADOS</small><h3>Datos y comunicación</h3><p>Primeros proyectos con Supabase Realtime y almacenamiento de resultados para usuarios conectados en línea.</p></div>
-        </article>
-      </div>
-      <p class="knowledge-note">Los conocimientos descritos corresponden a herramientas utilizadas en mis proyectos académicos; continúo ampliándolos con la práctica.</p>
 
+      <div class="capability-grid">
+        <article class="capability-card capability-web">
+          <div class="capability-top">
+            <span class="capability-label">01 / WEB Y FRONT-END</span>
+            <span class="capability-symbol" aria-hidden="true">&lt;/&gt;</span>
+          </div>
+          <h3>Interfaces web claras</h3>
+          <p>Organizo contenido y diseño páginas que se adaptan a diferentes pantallas. Combino estructura, estilos e interacción para que cada sitio sea fácil de recorrer.</p>
+          <div class="capability-proof">
+            <span>APLICADO EN</span>
+            <strong>Mi portafolio</strong>
+            <a href="#proyectos">Ver proyectos ↗</a>
+          </div>
+          <div class="capability-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="capability-card capability-game">
+          <div class="capability-top">
+            <span class="capability-label">02 / LÓGICA E INTERACCIÓN</span>
+            <span class="capability-symbol" aria-hidden="true">JS</span>
+          </div>
+          <h3>Experiencias interactivas</h3>
+          <p>Programo controles, movimientos, obstáculos, detección de colisiones y puntuaciones para que las acciones del jugador tengan una respuesta dentro del juego.</p>
+          <div class="capability-proof">
+            <span>APLICADO EN</span>
+            <strong>Velocity Run</strong>
+            <a href="#proyectos">Ver proyectos ↗</a>
+          </div>
+          <div class="capability-tags"><span>JavaScript</span><span>Eventos</span><span>Lógica de juego</span></div>
+        </article>
+
+        <article class="capability-card capability-live">
+          <div class="capability-top">
+            <span class="capability-label">03 / APLICACIONES CONECTADAS</span>
+            <span class="capability-symbol" aria-hidden="true">↗</span>
+          </div>
+          <h3>Conexión y datos en tiempo real</h3>
+          <p>Conecto jugadores desde distintos dispositivos, sincronizo información durante la partida y guardo resultados para consultar el historial de cada cuenta.</p>
+          <div class="capability-proof">
+            <span>APLICADO EN</span>
+            <strong>Speed Rivals</strong>
+            <a href="#proyectos">Ver proyectos ↗</a>
+          </div>
+          <div class="capability-tags"><span>Supabase Realtime</span><span>Vercel</span><span>GitHub</span></div>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="proyectos">
