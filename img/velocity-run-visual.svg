@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="t d">
+<title id="t">Velocity Run, videojuego de plataformas</title><desc id="d">Ilustración de un personaje saltando entre plataformas mientras recoge anillos.</desc>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#3597d4"/><stop offset="1" stop-color="#b3ebf4"/></linearGradient><linearGradient id="land" x2="0" y2="1"><stop stop-color="#69c66e"/><stop offset="1" stop-color="#286e53"/></linearGradient></defs>
+<rect width="900" height="540" fill="url(#sky)"/>
+<circle cx="740" cy="100" r="52" fill="#ffe48e"/>
+<g fill="#f4fdff" opacity=".88"><ellipse cx="165" cy="105" rx="70" ry="24"/><ellipse cx="204" cy="92" rx="39" ry="31"/><ellipse cx="630" cy="175" rx="52" ry="18"/></g>
+<path d="M0 340 150 235 250 315 420 195 565 320 715 220 900 335V540H0Z" fill="#397f76"/>
+<path d="M0 385 155 300 285 365 470 270 625 370 765 285 900 370V540H0Z" fill="#3c9b62"/>
+<g fill="#f0c46b" stroke="#5c4029" stroke-width="10"><rect x="0" y="432" width="900" height="108" rx="7"/></g>
+<path d="M0 465H900M0 500H900" stroke="#a86b41" stroke-width="11" stroke-dasharray="24 16"/>
+<g fill="#b5f6d1" stroke="#245941" stroke-width="7"><rect x="40" y="375" width="200" height="52" rx="8"/><rect x="380" y="340" width="174" height="52" rx="8"/><rect x="670" y="384" width="170" height="48" rx="8"/></g>
+<g fill="none" stroke="#ffd85f" stroke-width="15"><circle cx="300" cy="285" r="29"/><circle cx="380" cy="250" r="29"/><circle cx="590" cy="280" r="29"/></g>
+<!-- little platform runner -->
+<g transform="translate(270 260)">
+ <circle cx="53" cy="24" r="26" fill="#51dce7" stroke="#112a44" stroke-width="7"/>
+ <path d="M32 13q14-22 42-10l12 14-23-5-13 9Z" fill="#1d79b1"/>
+ <path d="M36 52 76 50 90 107 43 114Z" fill="#2389bd" stroke="#112a44" stroke-width="7"/>
+ <path d="m49 107-24 44m47-42 25 30" stroke="#112a44" stroke-width="17" stroke-linecap="round"/>
+ <path d="m28 151-25 5m94-17 20 8" stroke="#f45d68" stroke-width="13" stroke-linecap="round"/>
+ <path d="m37 63-27 30m54-32 32-15" stroke="#f4e8ce" stroke-width="13" stroke-linecap="round"/>
+</g>
+<g fill="#e9f8ff" opacity=".9"><path d="m135 390 18-35 18 35Z"/><path d="m813 380 14-30 14 30Z"/></g>
+</svg>
