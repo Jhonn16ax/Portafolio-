@@ -42,7 +42,8 @@ Videojuego de carreras 2D para dos jugadores que se conectan desde diferentes di
 
 ## Perfil personal: ciclismo
 
-Además de mis estudios, practico ciclismo competitivo y he alcanzado el título de **campeón nacional**. La preparación y la participación en competencias me han ayudado a fortalecer la disciplina, la organización del tiempo, la constancia y el compromiso con mis objetivos. Estas cualidades también las aplico a mis estudios y proyectos.
+Como complemento a mi formación académica, me gusta el ciclismo y soy deportista de alto rendimiento. Disfruto entrenar y participar en competencias, porque este deporte me reta a mejorar constantemente. A través de esa experiencia he fortalecido mi disciplina, constancia, responsabilidad y capacidad para trabajar por objetivos. He llegado a ser **campeón nacional de ciclismo**, un logro que representa el esfuerzo y compromiso que pongo en cada meta. Esos mismos valores los llevo a mis estudios y proyectos de programación.
+
 
 ## Recursos visuales
 
