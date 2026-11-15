@@ -2,7 +2,7 @@
 
 Bienvenido a mi portafolio.
 
-Soy estudiante de **Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)**. Me interesa el desarrollo web, la programación y la creación de aplicaciones interactivas. Disfruto aprender nuevas tecnologías, analizar problemas y convertir ideas en proyectos funcionales.
+Soy estudiante de **Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)**. Me interesa el desarrollo web, la programación y la creación de aplicaciones interactivas. Me motiva aprender nuevas tecnologías, resolver problemas y convertir ideas en proyectos funcionales.
 
 Me considero una persona responsable, organizada y comprometida con los objetivos que asumo. Valoro el trabajo en equipo, la comunicación y el aprendizaje continuo.
 
@@ -38,9 +38,13 @@ Videojuego de carreras 2D para dos jugadores que pueden conectarse desde distint
 - **Tecnologías:** HTML, CSS, JavaScript, Supabase Realtime y Vercel.
 - **Funcionamiento:** Supabase Realtime sincroniza el estado de los jugadores. La tabla \`race_results\` almacena el ganador, la distancia, los nombres de los jugadores y la fecha de la carrera.
 
-## Perfil personal
+## Ciclismo y logros deportivos
 
-Además de mis estudios, practico ciclismo competitivo y he obtenido títulos de campeón nacional. El deporte ha fortalecido mi disciplina, constancia, concentración y responsabilidad; cualidades que también aplico al desarrollar mis proyectos y cumplir mis compromisos.
+El ciclismo competitivo es una parte importante de mi vida. Me ha enseñado a mantener la constancia, organizar mi tiempo, prepararme para los retos y aprender de cada competencia. En la temporada 2026 obtuve el título de **campeón nacional**, además de **dos medallas de oro y dos de bronce**.
+
+La disciplina, la concentración y el compromiso que desarrollo en el deporte también forman parte de mi manera de estudiar y trabajar en proyectos de computación.
+
+La carpeta \`img/\` contiene tres ilustraciones originales que acompañan la sección de ciclismo: entrenamiento, competencia y logros.
 
 ## Sobre el diseño
 
