@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Logros deportivos de ciclismo</title><desc id="desc">Ilustración de un trofeo, medallas doradas y de bronce sobre un fondo deportivo.</desc>
+<defs>
+ <linearGradient id="night" x2="1" y2="1"><stop stop-color="#173f5b"/><stop offset="1" stop-color="#0b1729"/></linearGradient>
+ <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#fff0a6"/><stop offset=".48" stop-color="#f7c956"/><stop offset="1" stop-color="#ba772e"/></linearGradient>
+ <linearGradient id="bronze" x2="1" y2="1"><stop stop-color="#f2c39a"/><stop offset="1" stop-color="#a45a3c"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="20"/></filter>
+</defs>
+<rect width="900" height="560" fill="url(#night)"/>
+<circle cx="460" cy="230" r="175" fill="#51c7d5" opacity=".08" filter="url(#soft)"/>
+<g fill="none" stroke="#72c6e2" stroke-opacity=".16"><circle cx="460" cy="260" r="205"/><circle cx="460" cy="260" r="165"/><circle cx="460" cy="260" r="125"/></g>
+<path d="M0 460Q180 420 330 455T900 445V560H0Z" fill="#101f31"/>
+<path d="M0 488H900" stroke="#6edce3" stroke-opacity=".22" stroke-width="2"/>
+<g transform="translate(332 98)">
+ <path d="M60 28H185V95Q185 175 122 203Q60 175 60 95Z" fill="url(#gold)" stroke="#fff0b6" stroke-width="6"/>
+ <path d="M60 52H20V93Q20 139 79 153M185 52H225V93Q225 139 166 153" fill="none" stroke="#edbd58" stroke-width="18" stroke-linecap="round"/>
+ <path d="M122 200V258M78 261H166" stroke="#f4cf6d" stroke-width="20" stroke-linecap="round"/>
+ <path d="M82 275H162V292H82Z" fill="#d89c45"/>
+ <path d="M122 62 134 88 162 92 142 110 147 138 122 124 97 138 102 110 82 92 110 88Z" fill="#fff4c6" opacity=".95"/>
+</g>
+<g transform="translate(150 215)">
+ <path d="M55 0V82M105 0V82" stroke="#6ad3e8" stroke-width="12"/>
+ <path d="M25 86H85L55 137ZM75 86H135L105 137Z" fill="#57c6e3"/>
+ <circle cx="55" cy="167" r="50" fill="url(#gold)" stroke="#fff0b6" stroke-width="5"/>
+ <circle cx="55" cy="167" r="36" fill="none" stroke="#b77b2a" stroke-width="3"/>
+ <path d="m55 137 9 19 21 3-15 15 4 21-19-10-19 10 4-21-15-15 21-3Z" fill="#fff0b2"/>
+</g>
+<g transform="translate(640 224)">
+ <path d="M55 0V75M105 0V75" stroke="#6ad3e8" stroke-width="12"/>
+ <path d="M25 78H85L55 127ZM75 78H135L105 127Z" fill="#57c6e3"/>
+ <circle cx="55" cy="157" r="46" fill="url(#bronze)" stroke="#f5c4a1" stroke-width="5"/>
+ <circle cx="55" cy="157" r="32" fill="none" stroke="#984e37" stroke-width="3"/>
+ <path d="m55 130 8 18 19 3-14 13 4 19-17-9-17 9 4-19-14-13 19-3Z" fill="#f8dec7"/>
+</g>
+<g fill="#d7edfa" opacity=".72"><circle cx="110" cy="95" r="3"/><circle cx="230" cy="110" r="2"/><circle cx="690" cy="90" r="3"/><circle cx="800" cy="170" r="2"/><circle cx="270" cy="370" r="3"/><circle cx="760" cy="390" r="3"/></g>
+<text x="450" y="510" text-anchor="middle" fill="#baf26e" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="7">CONSTANCIA · ESFUERZO · LOGRO</text>
+<rect x="22" y="22" width="856" height="516" rx="18" fill="none" stroke="#d7f1ff" stroke-opacity=".25" stroke-width="2"/>
+</svg>
