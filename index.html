@@ -653,6 +653,40 @@
       .hero-code-inset{width:47%;right:6px;bottom:66px}
     }
 
+
+    /* TAREA 3 — intereses concretos, legibilidad y sección sobre el sitio */
+    .interest-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+    .interest-card{overflow:hidden;min-width:0;border:1px solid rgba(142,196,230,.2);border-radius:17px;background:linear-gradient(145deg,rgba(20,41,67,.96),rgba(9,21,38,.98));box-shadow:0 18px 44px rgba(0,0,0,.18);transition:transform .22s,border-color .22s,box-shadow .22s}
+    .interest-card:hover{transform:translateY(-5px);border-color:rgba(105,231,232,.46);box-shadow:0 24px 54px rgba(0,0,0,.26)}
+    .interest-image{position:relative;height:180px;overflow:hidden;background:#142b46}
+    .interest-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,12,25,.08),rgba(5,12,25,.48))}
+    .interest-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .4s}
+    .interest-card:hover .interest-image img{transform:scale(1.045)}
+    .interest-image span{position:absolute;left:14px;bottom:13px;z-index:1;color:#9df1ee;font:.52rem var(--mono);letter-spacing:.13em}
+    .interest-copy{padding:20px 20px 22px}
+    .interest-copy h3{margin:0 0 9px;color:#f3f7fc;font-size:1.02rem;letter-spacing:-.02em}
+    .interest-copy p{min-height:112px;margin:0 0 14px;color:#b2c2d5;font-size:.74rem;line-height:1.8}
+    .interest-copy strong{color:#fff}
+    .interest-copy a{display:inline-block;color:#80e7e8;font-size:.67rem;font-weight:800}
+    .interest-copy a:hover{text-decoration:underline;text-underline-offset:4px}
+    .site-goal{margin-top:19px;padding:13px 16px;border-left:2px solid var(--cyan);background:rgba(105,231,232,.055);color:#b8c8d9;font-size:.72rem;line-height:1.75}
+    .site-goal span{display:block;margin-bottom:5px;color:#86e7e7;font:.5rem var(--mono);letter-spacing:.14em}
+    .project-detail strong{color:#eef6ff}
+    @media(max-width:900px){
+      .interest-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .interest-card:last-child{grid-column:1/-1}
+      .interest-card:last-child .interest-copy p{min-height:0}
+    }
+    @media(max-width:700px){
+      .nav-links{gap:7px;overflow-x:auto;justify-content:flex-start}
+      .nav-links a{white-space:nowrap;font-size:.61rem}
+      .interest-grid{grid-template-columns:1fr;gap:13px}
+      .interest-card:last-child{grid-column:auto}
+      .interest-image{height:190px}
+      .interest-copy p,.interest-card:last-child .interest-copy p{min-height:0}
+      .closing{align-items:flex-start}
+    }
+
   </style>
 </head>
 <body>
@@ -664,6 +698,7 @@
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#perfil">Perfil</a>
+        <a href="#intereses">Intereses</a>
         <a href="#conocimientos">Conocimientos</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#ciclismo">Ciclismo</a>
@@ -729,7 +764,44 @@
         <article class="bento-card profile-copy">
           <p>Actualmente estudio <strong>Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)</strong>. En mis proyectos académicos he trabajado en páginas web, videojuegos, interactividad y comunicación entre usuarios en línea.</p>
           <p>Me considero una persona responsable, organizada y comprometida con las tareas que asumo. Me gusta analizar problemas, probar alternativas y aprender de los errores para mejorar el resultado. También valoro la comunicación y el trabajo bien hecho.</p>
+          <p>Quiero seguir aprendiendo sobre desarrollo de software, programación, bases de datos y creación de aplicaciones completas. Mi objetivo es convertir los conocimientos de la universidad en soluciones útiles y seguir creciendo con nuevos proyectos.</p>
           <div class="trait-list"><span>RESPONSABILIDAD</span><span>ORGANIZACIÓN</span><span>RESOLUCIÓN DE PROBLEMAS</span><span>APRENDIZAJE CONTINUO</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="intereses">
+      <div class="section-head">
+        <div>
+          <div class="section-tag"><b>02</b> / LO QUE ME INTERESA</div>
+          <h2>Aprender, crear y<br>superar nuevos retos.</h2>
+        </div>
+        <p class="section-summary">Tres intereses que forman parte de mi vida académica y personal, acompañados de ejemplos de lo que hago y disfruto.</p>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <div class="interest-image"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=85" alt="Código de programación en una pantalla" loading="lazy"><span>01 / SOFTWARE</span></div>
+          <div class="interest-copy">
+            <h3>Programación y desarrollo</h3>
+            <p>Me interesa construir aplicaciones y videojuegos, entender cómo funcionan y resolver problemas mediante código. Lo he puesto en práctica en <strong>Velocity Run</strong> y <strong>Speed Rivals</strong>.</p>
+            <a href="#proyectos">Ver mis proyectos ↗</a>
+          </div>
+        </article>
+        <article class="interest-card">
+          <div class="interest-image"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85" alt="Computadora y espacio de trabajo digital" loading="lazy"><span>02 / DISEÑO DIGITAL</span></div>
+          <div class="interest-copy">
+            <h3>Tecnología e interfaces</h3>
+            <p>Me gusta combinar la programación con el diseño visual para crear páginas claras y fáciles de usar. Me interesa aprender más sobre experiencia de usuario y diseño adaptable a computadoras y celulares.</p>
+            <a href="#conocimientos">Ver herramientas que utilizo ↗</a>
+          </div>
+        </article>
+        <article class="interest-card">
+          <div class="interest-image"><img src="https://images.unsplash.com/photo-1544191696-15693072c9c4?auto=format&fit=crop&w=900&q=85" alt="Ciclista entrenando en carretera" loading="lazy"><span>03 / DEPORTE</span></div>
+          <div class="interest-copy">
+            <h3>Ciclismo competitivo</h3>
+            <p>El ciclismo es una parte importante de mi vida. Soy deportista de alto rendimiento y he llegado a ser campeón nacional; este deporte me enseña disciplina, constancia y a trabajar por objetivos.</p>
+            <a href="#ciclismo">Conocer mi experiencia deportiva ↗</a>
+          </div>
         </article>
       </div>
     </section>
@@ -737,7 +809,7 @@
     <section class="section" id="conocimientos">
       <div class="section-head editorial-head">
         <div class="editorial-copy">
-          <div class="section-tag"><b>02</b> / CONOCIMIENTOS TÉCNICOS</div>
+          <div class="section-tag"><b>03</b> / CONOCIMIENTOS TÉCNICOS</div>
           <h2>Herramientas que he<br>utilizado en mis proyectos.</h2>
           <p class="section-summary">Tecnologías y plataformas aplicadas en ejercicios y proyectos académicos. Continúo fortaleciendo estos conocimientos.</p>
         </div>
@@ -779,7 +851,7 @@
     <section class="section" id="proyectos">
       <div class="section-head editorial-head">
         <div class="editorial-copy">
-          <div class="section-tag"><b>03</b> / PROYECTOS DESTACADOS</div>
+          <div class="section-tag"><b>04</b> / PROYECTOS DESTACADOS</div>
           <h2>Trabajo aplicado.</h2>
           <p class="section-summary">Proyectos que muestran mi experiencia práctica inicial con desarrollo web, lógica de programación e interacción entre usuarios.</p>
         </div>
@@ -819,8 +891,8 @@
           <div class="project-copy">
             <div class="project-kicker"><span>DESARROLLO WEB · JAVASCRIPT</span><span>PUBLICADO</span></div>
             <h3>Velocity <span>Run</span></h3>
-            <p class="project-desc">Videojuego de plataformas en el que el jugador salta y se agacha para esquivar obstáculos y recoger objetos. El proyecto combina diseño visual, controles y lógica de juego.</p>
-            <div class="project-detail"><b>DESARROLLO E IMPLEMENTACIÓN</b><p>Construido con HTML, CSS y JavaScript. JavaScript controla el movimiento del personaje, la aparición de obstáculos, las colisiones y el puntaje. Está publicado en GitHub Pages y la lógica se ejecuta en el navegador; no usa una base de datos para guardar resultados.</p></div>
+            <p class="project-desc">Videojuego de plataformas en el que el jugador controla un personaje que salta y se agacha para esquivar obstáculos y recoger objetos. Está pensado para personas que disfrutan los retos de habilidad y los juegos sencillos que se pueden usar desde el navegador.</p>
+            <div class="project-detail"><b>¿CÓMO ESTÁ HECHO?</b><p>La página se publica con <strong>GitHub Pages</strong> y está construida con HTML, CSS y JavaScript. JavaScript se ejecuta en el navegador y controla los movimientos, los obstáculos, las colisiones y el puntaje; el proyecto no utiliza una base de datos, por lo que no guarda resultados de las partidas.</p></div>
             <div class="tag-row"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span></div>
             <div class="project-actions"><a class="btn btn-main" href="https://jhonn16ax.github.io/proyecto/" target="_blank" rel="noopener noreferrer">PROBAR PROYECTO ↗</a><a class="repo-link" href="https://github.com/Jhonn16ax/proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio</a></div>
           </div>
@@ -858,8 +930,8 @@
           <div class="project-copy">
             <div class="project-kicker"><span>APLICACIÓN WEB · TIEMPO REAL</span><span>PUBLICADO</span></div>
             <h3>Speed <span>Rivals</span></h3>
-            <p class="project-desc">Videojuego de carreras 2D para dos jugadores que se conectan desde dispositivos distintos. La aplicación comparte el estado de la carrera y permite comparar la distancia recorrida.</p>
-            <div class="project-detail"><b>DESARROLLO E IMPLEMENTACIÓN</b><p>Construido con HTML, CSS y JavaScript. Vercel publica la aplicación; Supabase Realtime sincroniza el estado de los jugadores y la tabla <code>race_results</code> almacena el ganador, la distancia, los nombres y la fecha de la carrera.</p></div>
+            <p class="project-desc">Videojuego de carreras 2D para dos jugadores que se conectan desde dispositivos distintos. Está pensado para competir en línea, comparar la distancia recorrida y conocer el resultado de la carrera.</p>
+            <div class="project-detail"><b>¿CÓMO ESTÁ HECHO?</b><p>La aplicación se publica con <strong>Vercel</strong> y está construida con HTML, CSS y JavaScript. JavaScript se ejecuta en el navegador para controlar los autos y la interacción; <strong>Supabase Realtime</strong> sincroniza la información entre los jugadores. La tabla <code>race_results</code> guarda el ganador, la distancia, los nombres de los jugadores y la fecha de la carrera.</p></div>
             <div class="tag-row"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Supabase</span><span>Vercel</span></div>
             <div class="project-actions"><a class="btn btn-main" href="https://proyecto12-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">PROBAR PROYECTO ↗</a><a class="repo-link" href="https://github.com/Jhonn16ax/proyecto12" target="_blank" rel="noopener noreferrer">Ver repositorio</a></div>
           </div>
@@ -870,7 +942,7 @@
     <section class="section" id="ciclismo">
       <div class="section-head editorial-head">
         <div class="editorial-copy">
-          <div class="section-tag"><b>04</b> / PERFIL PERSONAL</div>
+          <div class="section-tag"><b>05</b> / PERFIL PERSONAL</div>
           <h2>Disciplina dentro y fuera<br>de la tecnología.</h2>
           <p class="section-summary">El deporte es una parte importante de mi vida y complementa mi formación en Ingeniería en Computación.</p>
         </div>
@@ -891,9 +963,14 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="sobre-este-sitio">
       <div class="closing">
-        <div class="closing-copy"><div class="section-tag"><b>05</b> / OBJETIVO</div><h2>Preparado para seguir aprendiendo y aportar.</h2><p>Mi objetivo es continuar fortaleciendo mis conocimientos en computación, participar en nuevos proyectos y aportar responsabilidad, dedicación y disposición para aprender en cada oportunidad.</p></div>
+        <div class="closing-copy">
+          <div class="section-tag"><b>06</b> / SOBRE ESTE SITIO</div>
+          <h2>Un espacio para mostrar lo que aprendo y construyo.</h2>
+          <p>Elegí un fondo azul oscuro con detalles celestes y violetas porque transmite una identidad tecnológica y permite que los textos y proyectos destaquen con buen contraste. Organicé el contenido en secciones y tarjetas con una misma tipografía para que sea fácil recorrerlo y leerlo tanto en una computadora como en un celular.</p>
+          <div class="site-goal"><span>MI OBJETIVO</span>Continuar fortaleciendo mis conocimientos en computación, participar en nuevos proyectos y aportar responsabilidad, dedicación y disposición para aprender en cada oportunidad.</div>
+        </div>
         <a class="btn btn-main" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">VISITAR MI GITHUB ↗</a>
       </div>
     </section>
