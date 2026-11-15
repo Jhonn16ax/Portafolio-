@@ -2,9 +2,9 @@
 
 Portafolio académico y de proyectos de **Jhonn**, estudiante de Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ).
 
-## Perfil
+## Perfil profesional en formación
 
-Interés en desarrollo de software, programación y creación de aplicaciones web interactivas. Perfil en formación, con enfoque en responsabilidad, organización, resolución de problemas y aprendizaje continuo.
+Interés en desarrollo de software, programación y creación de aplicaciones web interactivas. Me considero una persona responsable, organizada y comprometida con las tareas que asumo. Me gusta analizar problemas, probar alternativas y aprender de los errores para mejorar los resultados.
 
 ## Conocimientos aplicados
 
@@ -17,7 +17,7 @@ Tecnologías y herramientas utilizadas en proyectos académicos:
 - **Vercel y GitHub Pages:** despliegue y publicación de aplicaciones web.
 - **Canvas 2D:** gráficos para videojuegos en dos dimensiones.
 
-Estos conocimientos corresponden a proyectos académicos y no representan certificaciones profesionales.
+Estos conocimientos corresponden a herramientas aplicadas en proyectos académicos y continúan en desarrollo.
 
 ## Proyectos seleccionados
 
@@ -38,16 +38,20 @@ Videojuego de carreras 2D para dos jugadores que se conectan desde diferentes di
 - Aplicación: https://proyecto12-kohl.vercel.app/
 - Código fuente: https://github.com/Jhonn16ax/proyecto12
 - Tecnologías: HTML, CSS, JavaScript, Supabase Realtime y Vercel.
-- Supabase Realtime sincroniza el estado de los jugadores. La tabla \`race_results\` registra ganador, distancia, nombres y fecha de la carrera.
+- Supabase Realtime sincroniza el estado de los jugadores. La tabla \`race_results\` registra el ganador, la distancia, los nombres y la fecha de la carrera.
 
-## Perfil personal
+## Perfil personal: ciclismo
 
-Practico ciclismo competitivo. En la temporada 2026 obtuve el título de campeón nacional, dos medallas de oro y dos de bronce. El deporte ha fortalecido mi disciplina, constancia y responsabilidad, cualidades que también aplico a mis estudios y proyectos.
+Además de mis estudios, practico ciclismo competitivo y he alcanzado el título de **campeón nacional**. La preparación y la participación en competencias me han ayudado a fortalecer la disciplina, la organización del tiempo, la constancia y el compromiso con mis objetivos. Estas cualidades también las aplico a mis estudios y proyectos.
+
+## Recursos visuales
+
+Las ilustraciones principales de programación y videojuegos están incrustadas directamente en \`index.html\`, por lo que se visualizan incluso al abrir ese archivo por separado. La carpeta \`img/\` del repositorio conserva las versiones SVG originales.
 
 ## Publicación
 
-El sitio se puede publicar con GitHub Pages desde la rama \`main\` y la carpeta raíz \`/(root)\`.
+El sitio puede publicarse con GitHub Pages desde la rama \`main\` y la carpeta raíz \`/(root)\`.
 
 ---
 
-Este portafolio presenta mi formación y experiencia académica actual, con el objetivo de mostrar mis proyectos, conocimientos aplicados y disposición para seguir aprendiendo en el área de computación.
+Este portafolio presenta mi formación y experiencia académica actual, mis proyectos y mi disposición para continuar aprendiendo y aportar con responsabilidad en el área de computación.
