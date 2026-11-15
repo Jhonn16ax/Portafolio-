@@ -753,6 +753,12 @@
     .project-art.project-screenshot{position:relative;overflow:hidden;background:#0d1b30;}
     .project-art.project-screenshot>img{position:relative;z-index:2;display:block;width:100%;height:100%;min-height:320px;object-fit:cover;object-position:center;}
     @media(max-width:760px){.project-art.project-screenshot>img{min-height:230px;}}
+
+    .profile-lead{position:relative;isolation:isolate;overflow:hidden;}
+    .profile-tech-image{position:absolute;z-index:0;top:66px;left:7%;width:86%;height:43%;object-fit:cover;object-position:center;border-radius:18px;opacity:.92;mix-blend-mode:screen;mask-image:linear-gradient(to bottom,#000 0%,#000 65%,transparent 100%);pointer-events:none;}
+    .profile-lead .card-index,.profile-lead h3,.profile-lead p{position:relative;z-index:2;}
+    .profile-lead h3{margin-top:auto;text-shadow:0 2px 16px rgba(7,16,35,.55);}
+    @media(max-width:760px){.profile-tech-image{top:72px;height:38%;left:4%;width:92%;}.profile-lead h3{margin-top:auto;}}
 </style>
 </head>
 <body>
@@ -823,6 +829,7 @@
       </div>
       <div class="bento-profile">
         <article class="bento-card profile-lead">
+          <img class="profile-tech-image" src="https://raw.githubusercontent.com/Jhonn16ax/Portafolio-/main/img/profile-tech-visual.webp?v=1" alt="Visual tecnológico de un circuito digital iluminado en tonos azules y cian" loading="eager">
           <div class="card-index">PRESENTACIÓN / 2026</div>
           <h3>Me interesa crear tecnología útil a través de <em>la lógica, el diseño y la programación.</em></h3>
           <p>Estudiante de Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ).</p>
