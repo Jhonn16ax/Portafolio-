@@ -213,7 +213,75 @@
     @media (prefers-reduced-motion: reduce) {
       *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
     }
-  </style>
+  
+    .cycling-section { padding-top: 76px; }
+    .cycling-feature {
+      display: grid; grid-template-columns: 1.1fr .9fr; gap: 25px; align-items: stretch;
+    }
+    .cycling-story {
+      padding: clamp(23px, 3.2vw, 38px); border: 1px solid var(--line); border-radius: 12px;
+      background: linear-gradient(145deg, rgba(23,43,67,.9), rgba(14,27,44,.98));
+    }
+    .cycling-kicker { margin-bottom: 13px; color: var(--cyan); font: .61rem var(--mono); letter-spacing: .15em; }
+    .cycling-story h3 { margin: 0 0 17px; font-size: clamp(1.75rem,3vw,2.45rem); line-height: 1.12; letter-spacing: -.055em; }
+    .cycling-story h3 span { color: var(--green); }
+    .cycling-story p { margin: 0 0 13px; color: var(--muted); font-size: .81rem; line-height: 1.88; }
+    .cycling-story strong { color: var(--ink); }
+    .cycling-achievements {
+      position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: center;
+      padding: 24px; border: 1px solid rgba(169,230,186,.25); border-radius: 12px;
+      background: radial-gradient(circle at 90% 5%, rgba(169,230,186,.13), transparent 46%), linear-gradient(150deg,#153548,#102338 75%);
+    }
+    .cycling-achievements::after {
+      content: ""; position: absolute; width: 230px; height: 230px; right: -90px; bottom: -110px;
+      border: 1px solid rgba(169,230,186,.12); border-radius: 50%; box-shadow: 0 0 0 25px rgba(169,230,186,.025),0 0 0 50px rgba(169,230,186,.02);
+    }
+    .achievement-top { position: relative; z-index: 1; display: flex; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid rgba(221,244,255,.12); color: var(--dim); font: .58rem var(--mono); letter-spacing: .13em; }
+    .achievement-top b { color: var(--green); font-size: .8rem; }
+    .achievement-main { position: relative; z-index: 1; display: flex; align-items: center; gap: 14px; padding: 22px 0 20px; }
+    .trophy-icon { width: 55px; height: 55px; display: grid; place-items: center; border: 1px solid rgba(247,204,108,.36); border-radius: 13px; background: rgba(247,204,108,.08); font-size: 1.75rem; }
+    .achievement-main small,.achievement-main strong,.achievement-main span { display: block; }
+    .achievement-main small { margin-bottom: 3px; color: var(--green); font: .53rem var(--mono); letter-spacing: .13em; }
+    .achievement-main strong { color: var(--ink); font-size: 1.13rem; }
+    .achievement-main span { color: var(--muted); font-size: .68rem; }
+    .medal-row { position: relative; z-index: 1; display: flex; align-items: center; gap: 13px; padding: 12px 0; border-top: 1px solid rgba(221,244,255,.1); }
+    .medal { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; color: #2a1c08; font-size: 1rem; box-shadow: inset 0 0 0 4px rgba(255,255,255,.16); }
+    .medal-gold { background: linear-gradient(145deg,#ffed9c,#d69a35); }
+    .medal-bronze { background: linear-gradient(145deg,#f2c29b,#a75f3b); color: #30180d; }
+    .medal-row b,.medal-row small { display: block; }
+    .medal-row b { color: var(--ink); font-size: .78rem; }
+    .medal-row small { color: var(--muted); font-size: .63rem; }
+    .achievement-bottom { position: relative; z-index: 1; margin-top: 12px; color: var(--green); font: .5rem var(--mono); letter-spacing: .14em; text-align: center; }
+    .cycling-gallery { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 13px; margin-top: 17px; }
+    .cycling-photo { min-width: 0; overflow: hidden; margin: 0; border: 1px solid var(--line); border-radius: 10px; background: #12253a; }
+    .cycling-photo img { display: block; width: 100%; aspect-ratio: 1.52 / 1; object-fit: cover; transition: transform .35s ease; }
+    .cycling-photo:hover img { transform: scale(1.035); }
+    .cycling-photo figcaption { display: grid; gap: 5px; padding: 12px 13px 14px; }
+    .cycling-photo figcaption span { color: var(--cyan); font: .53rem var(--mono); letter-spacing: .12em; }
+    .cycling-photo figcaption b { color: var(--ink); font-size: .7rem; line-height: 1.45; }
+    .cycling-image-note { margin: 9px 0 0; color: var(--dim); font-size: .61rem; }
+    .cycling-to-computing {
+      display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start;
+      margin-top: 16px; padding: 18px 20px; border: 1px solid rgba(101,224,231,.18);
+      border-radius: 9px; background: rgba(101,224,231,.045);
+    }
+    .cycling-bridge-icon { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 8px; color: #07131f; background: var(--cyan); font-size: 1.2rem; font-weight: 900; }
+    .cycling-to-computing b { display: block; margin-bottom: 4px; color: var(--cyan); font: .58rem var(--mono); letter-spacing: .11em; }
+    .cycling-to-computing p { margin: 0; color: var(--muted); font-size: .74rem; line-height: 1.8; }
+    @media (max-width: 900px) {
+      .cycling-feature { grid-template-columns: 1fr; }
+      .cycling-gallery { grid-template-columns: repeat(2,1fr); }
+      .cycling-photo-large { grid-column: 1 / -1; }
+    }
+    @media (max-width: 680px) {
+      .cycling-gallery { grid-template-columns: 1fr; }
+      .cycling-photo-large { grid-column: auto; }
+      .cycling-photo img { aspect-ratio: 1.7 / 1; }
+      .cycling-story { padding: 22px; }
+      .cycling-achievements { padding: 21px; }
+    }
+
+</style>
 </head>
 <body>
   <header class="topbar">
@@ -226,7 +294,7 @@
         <a href="#perfil">Perfil</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#ciclismo">Ciclismo</a>
       </nav>
       <a class="nav-github" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
     </div>
@@ -338,15 +406,57 @@
       </div>
     </section>
 
-    <section class="section" id="sobre-mi">
+    <section class="section cycling-section" id="ciclismo">
       <div class="section-head">
-        <div><div class="section-kicker"><b>04</b> / FUERA DEL CÓDIGO</div><h2>La disciplina también<br>se entrena.</h2></div>
-        <p class="section-summary">El ciclismo es una parte importante de mi vida y complementa mi formación personal.</p>
+        <div><div class="section-kicker"><b>04</b> / MI TRAYECTORIA DEPORTIVA</div><h2>El ciclismo también<br>forma parte de quién soy.</h2></div>
+        <p class="section-summary">Una pasión que me ha enseñado a trabajar por objetivos, mantener la constancia y dar lo mejor de mí en cada desafío.</p>
       </div>
-      <div class="cycling-strip">
-        <div class="cycling-icon">↗</div>
-        <div><h3>Ciclismo competitivo · Campeón nacional</h3><p>El entrenamiento y la competencia me han ayudado a fortalecer la constancia, la responsabilidad, la concentración y el compromiso con mis metas.</p></div>
-        <div class="cycling-badge">DISCIPLINA Y CONSTANCIA</div>
+
+      <div class="cycling-feature">
+        <div class="cycling-story">
+          <div class="cycling-kicker">CICLISMO COMPETITIVO</div>
+          <h3>Más que llegar a la meta,<br><span>disfruto el camino.</span></h3>
+          <p>El ciclismo ocupa un lugar importante en mi vida. Es una actividad que exige preparación, compromiso y disciplina. Cada entrenamiento y cada competencia representan una oportunidad para conocer mis capacidades, corregir errores y seguir mejorando.</p>
+          <p>Participar en campeonatos nacionales me ha permitido vivir retos exigentes y valorar el esfuerzo que existe detrás de cada resultado. En la temporada 2026 alcancé el título de <strong>campeón nacional</strong>, además de conseguir <strong>dos medallas de oro y dos medallas de bronce</strong>.</p>
+          <p>Estos logros son una motivación para continuar creciendo. Más allá de las medallas, valoro la constancia, la responsabilidad y la concentración que se necesitan para prepararse y competir.</p>
+        </div>
+        <div class="cycling-achievements" aria-label="Logros de ciclismo de la temporada 2026">
+          <div class="achievement-top"><span>TEMPORADA</span><b>2026</b></div>
+          <div class="achievement-main">
+            <div class="trophy-icon">🏆</div>
+            <div><small>LOGRO DESTACADO</small><strong>Campeón nacional</strong><span>Ciclismo competitivo</span></div>
+          </div>
+          <div class="medal-row">
+            <div class="medal medal-gold"><span>★</span></div>
+            <div><b>2 medallas de oro</b><small>Resultado de esfuerzo y preparación</small></div>
+          </div>
+          <div class="medal-row">
+            <div class="medal medal-bronze"><span>★</span></div>
+            <div><b>2 medallas de bronce</b><small>Experiencia que impulsa nuevos retos</small></div>
+          </div>
+          <div class="achievement-bottom">ESFUERZO · CONSTANCIA · SUPERACIÓN</div>
+        </div>
+      </div>
+
+      <div class="cycling-gallery">
+        <figure class="cycling-photo cycling-photo-large">
+          <img src="img/ciclismo-entrenamiento.svg" alt="Ilustración de un ciclista entrenando en una ruta de montaña">
+          <figcaption><span>01 / PREPARACIÓN</span><b>La constancia se construye en cada entrenamiento.</b></figcaption>
+        </figure>
+        <figure class="cycling-photo">
+          <img src="img/ciclismo-competencia.svg" alt="Ilustración de varios ciclistas durante una competencia">
+          <figcaption><span>02 / COMPETENCIA</span><b>Enfrentar retos y aprender en cada carrera.</b></figcaption>
+        </figure>
+        <figure class="cycling-photo">
+          <img src="img/ciclismo-logros.svg" alt="Ilustración de trofeo y medallas deportivas">
+          <figcaption><span>03 / RESULTADOS</span><b>Los logros reflejan el trabajo realizado.</b></figcaption>
+        </figure>
+      </div>
+      <p class="cycling-image-note">Imágenes ilustrativas creadas para acompañar esta sección; no representan fotografías de mis competencias.</p>
+
+      <div class="cycling-to-computing">
+        <div class="cycling-bridge-icon">↗</div>
+        <div><b>UNA DISCIPLINA QUE TAMBIÉN APLICO A LA COMPUTACIÓN</b><p>El deporte me ha enseñado a organizar mi tiempo, mantener el compromiso y no rendirme ante los problemas. Llevo esa mentalidad a mis estudios y proyectos de programación: analizo lo que debo mejorar, practico, aprendo de los errores y trabajo hasta alcanzar el objetivo.</p></div>
       </div>
     </section>
 
