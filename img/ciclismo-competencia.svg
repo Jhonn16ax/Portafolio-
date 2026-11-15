@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+<title id="title">Competencia de ciclismo</title><desc id="desc">Ilustración de un grupo de ciclistas compitiendo en una carretera con montañas al fondo.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#15334f"/><stop offset=".56" stop-color="#39728b"/><stop offset="1" stop-color="#e0b77c"/></linearGradient>
+ <linearGradient id="road" x2="0" y2="1"><stop stop-color="#536577"/><stop offset="1" stop-color="#101b2c"/></linearGradient>
+</defs>
+<rect width="900" height="560" fill="url(#bg)"/>
+<path d="m0 322 155-180 125 140 155-185 160 190 140-150 165 170v120H0Z" fill="#21455e"/>
+<path d="m0 361 180-115 120 90 180-145 145 133 130-87 145 100v110H0Z" fill="#367267"/>
+<path d="M0 405q250-65 430-5t470-3v163H0Z" fill="#1d574b"/>
+<path d="M0 458q265-92 455-28t445-33" fill="none" stroke="#a2c5a3" stroke-width="9" opacity=".35"/>
+<path d="M0 560Q165 412 353 382t547 64v114Z" fill="url(#road)"/>
+<path d="M530 560q-50-80-20-130" fill="none" stroke="#e8dcae" stroke-width="7" stroke-dasharray="28 25"/>
+<g transform="translate(150 230)">
+ <g transform="translate(0 35) scale(.78)">
+  <circle cx="45" cy="220" r="55" fill="none" stroke="#f0f6fb" stroke-width="7"/><circle cx="200" cy="220" r="55" fill="none" stroke="#f0f6fb" stroke-width="7"/>
+  <path d="m45 220 82-73 73 73H45l82-73 42-48" fill="none" stroke="#baf26e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m124 97 25-26 30 25" fill="none" stroke="#edf8ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="m125 101 35 43 12 34m-47-34-37 39-43 38m39-71-30-18" fill="none" stroke="#eaf6ff" stroke-width="15" stroke-linecap="round"/>
+  <path d="m102 89q20-27 45-8l8 19-38 8Z" fill="#baf26e" stroke="#eff7ff" stroke-width="3"/>
+  <path d="m110 135 44 10 16 34-47 18-31-35Z" fill="#2f8ab9" stroke="#edf8ff" stroke-width="3"/>
+ </g>
+ <g transform="translate(220 65) scale(.62)">
+  <circle cx="45" cy="220" r="55" fill="none" stroke="#f0f6fb" stroke-width="7"/><circle cx="200" cy="220" r="55" fill="none" stroke="#f0f6fb" stroke-width="7"/>
+  <path d="m45 220 82-73 73 73H45l82-73 42-48" fill="none" stroke="#65e0e7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m124 97 25-26 30 25m-54 5 35 43 12 34m-47-34-37 39-43 38m39-71-30-18" fill="none" stroke="#eaf6ff" stroke-width="15" stroke-linecap="round"/>
+  <path d="m102 89q20-27 45-8l8 19-38 8Z" fill="#65e0e7" stroke="#eff7ff" stroke-width="3"/>
+  <path d="m110 135 44 10 16 34-47 18-31-35Z" fill="#2b648c" stroke="#edf8ff" stroke-width="3"/>
+ </g>
+ <g transform="translate(420 115) scale(.48)">
+  <circle cx="45" cy="220" r="55" fill="none" stroke="#f0f6fb" stroke-width="7"/><circle cx="200" cy="220" r="55" fill="none" stroke="#f0f6fb" stroke-width="7"/>
+  <path d="m45 220 82-73 73 73H45l82-73 42-48" fill="none" stroke="#f2c968" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m124 97 25-26 30 25m-54 5 35 43 12 34m-47-34-37 39-43 38" fill="none" stroke="#eaf6ff" stroke-width="15" stroke-linecap="round"/>
+  <path d="m102 89q20-27 45-8l8 19-38 8Z" fill="#f2c968" stroke="#eff7ff" stroke-width="3"/>
+  <path d="m110 135 44 10 16 34-47 18-31-35Z" fill="#b85c5e" stroke="#edf8ff" stroke-width="3"/>
+ </g>
+</g>
+<g stroke="#f4f8ff" stroke-width="5" stroke-linecap="round" opacity=".65"><path d="M65 100h85M90 121h55M730 115h95M758 138h55"/></g>
+<g fill="#baf26e"><circle cx="65" cy="80" r="5"/><circle cx="840" cy="190" r="5"/></g>
+<rect x="22" y="22" width="856" height="516" rx="18" fill="none" stroke="#d7f1ff" stroke-opacity=".25" stroke-width="2"/>
+</svg>
