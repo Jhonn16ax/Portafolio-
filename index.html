@@ -348,6 +348,34 @@
       .cycling-badge{margin-left:0}
     }
 
+
+    /* Ajuste de jerarquía visual e incorporación de fotografías */
+    h1{font-size:clamp(2.9rem,5.1vw,4.8rem);letter-spacing:-.065em;line-height:1.04}
+    h2{font-size:clamp(1.85rem,3.1vw,2.75rem);letter-spacing:-.052em;line-height:1.12}
+    .profile-lead h3{font-size:clamp(1.35rem,2vw,1.8rem)}
+    .project-copy h3{font-size:clamp(1.55rem,2.5vw,2.05rem)}
+    .photo-gallery{display:grid;gap:15px;margin-top:25px}
+    .tech-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .cycling-gallery{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 18px}
+    .photo-gallery figure{position:relative;min-width:0;min-height:0;margin:0;overflow:hidden;border:1px solid rgba(142,196,230,.2);border-radius:15px;background:#10233a;box-shadow:0 15px 35px rgba(0,0,0,.18)}
+    .photo-gallery img{display:block;width:100%;height:205px;object-fit:cover;transition:transform .45s ease,filter .45s ease}
+    .photo-gallery figure:hover img{transform:scale(1.045);filter:saturate(1.12)}
+    .photo-gallery figcaption{display:flex;flex-direction:column;gap:5px;padding:13px 15px;color:#dce8f5;font-size:.76rem;font-weight:700}
+    .photo-gallery figcaption span{color:#7fe5e6;font: .51rem var(--mono);letter-spacing:.14em}
+    .cycling-gallery img{height:235px}
+    @media(max-width:700px){
+      h1{font-size:clamp(2.8rem,10vw,4.1rem)}
+      h2{font-size:clamp(1.8rem,6vw,2.35rem)}
+      .tech-gallery{grid-template-columns:1fr 1fr}
+      .tech-gallery figure:first-child{grid-column:1/-1}
+      .photo-gallery img{height:175px}
+      .cycling-gallery img{height:190px}
+    }
+    @media(max-width:430px){
+      .tech-gallery,.cycling-gallery{grid-template-columns:1fr}
+      .tech-gallery figure:first-child{grid-column:auto}
+      .photo-gallery img,.cycling-gallery img{height:190px}
+    }
   </style>
 </head>
 <body>
@@ -489,6 +517,12 @@
         </article>
       </div>
       <p class="knowledge-note">Los conocimientos descritos corresponden a herramientas utilizadas en mis proyectos académicos; continúo ampliándolos con la práctica.</p>
+
+      <div class="photo-gallery tech-gallery" aria-label="Imágenes relacionadas con computación">
+        <figure><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85" alt="Placa electrónica y componentes de tecnología" loading="lazy"><figcaption><span>HARDWARE</span> Tecnología y componentes</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=85" alt="Código de programación en una pantalla" loading="lazy"><figcaption><span>PROGRAMACIÓN</span> Desarrollo de software</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85" alt="Personas colaborando en un proyecto tecnológico" loading="lazy"><figcaption><span>INNOVACIÓN</span> Ideas y trabajo en equipo</figcaption></figure>
+      </div>
     </section>
 
     <section class="section" id="proyectos">
@@ -579,6 +613,11 @@
       <div class="section-head">
         <div><div class="section-tag"><b>04</b> / PERFIL PERSONAL</div><h2>Disciplina dentro y fuera<br>de la tecnología.</h2></div>
         <p class="section-summary">El deporte es una parte importante de mi vida y complementa mi formación en Ingeniería en Computación.</p>
+      </div>
+
+      <div class="photo-gallery cycling-gallery" aria-label="Fotografías de ciclismo">
+        <figure><img src="https://images.unsplash.com/photo-1544191696-15693072c9c4?auto=format&fit=crop&w=1200&q=85" alt="Ciclista entrenando en carretera" loading="lazy"><figcaption><span>ENTRENAMIENTO</span> Constancia en cada recorrido</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=85" alt="Ciclista practicando deporte al aire libre" loading="lazy"><figcaption><span>COMPETENCIA</span> Disciplina y superación</figcaption></figure>
       </div>
       <div class="cycling-card">
         <div class="cycling-icon" aria-hidden="true">🚴</div>
