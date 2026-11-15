@@ -3,186 +3,234 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portafolio de Jhonn: estudiante de Ingeniería en Computación, interesado en el ciclismo, la programación y la tecnología.">
-  <meta name="theme-color" content="#0b0d12">
-  <title>Jhonn — Portafolio</title>
+  <meta name="description" content="Portafolio de Jhonn: estudiante de Ingeniería en Computación, ciclista y campeón nacional. Conoce sus intereses y proyectos digitales.">
+  <meta name="theme-color" content="#080d19">
+  <title>Jhonn | Portafolio personal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-glow page-glow-one" aria-hidden="true"></div>
-  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Jhonn, inicio">
-      <span class="brand-mark">JH</span>
-      <span class="brand-name">JHONN<span class="brand-dot">.</span></span>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-icon">J<span>.</span></span>
+      <span>JHONN<span class="brand-muted"> / PORTAFOLIO</span></span>
     </a>
-    <nav class="main-nav" aria-label="Navegación principal">
+    <nav class="nav" aria-label="Navegación">
       <a href="#sobre-mi">Sobre mí</a>
+      <a href="#ciclismo">Ciclismo</a>
       <a href="#intereses">Intereses</a>
       <a href="#proyectos">Proyectos</a>
     </nav>
-    <a class="header-link" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">
-      Mi GitHub <span aria-hidden="true">↗</span>
-    </a>
+    <a class="nav-cta" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
   </header>
 
-  <main>
-    <section class="hero" id="inicio">
+  <main id="inicio">
+    <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> PORTAFOLIO PERSONAL · 2026</div>
-        <p class="hero-kicker">HOLA, SOY JHONN</p>
-        <h1>Ideas que se mueven.<br><span>Proyectos que avanzan.</span></h1>
-        <p class="hero-description">Estudiante de Ingeniería en Computación en la USFQ. Me interesa la tecnología, disfruto crear cosas con código y encuentro en el ciclismo una forma de superarme.</p>
+        <div class="eyebrow"><span class="pulse"></span> ESTUDIANTE · CICLISTA · CREADOR</div>
+        <p class="hero-intro">¡HOLA! SOY JHONN</p>
+        <h1>La disciplina de competir.<br><span>La curiosidad de crear.</span></h1>
+        <p class="hero-text">Estudio Ingeniería en Computación en la USFQ, soy ciclista y me apasiona convertir ideas en experiencias digitales. En la pista busco superar mis límites; frente al código, descubrir nuevas posibilidades.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a>
-          <a class="button button-quiet" href="#sobre-mi">Conocer más <span aria-hidden="true">＋</span></a>
+          <a class="btn btn-main" href="#proyectos">VER MIS PROYECTOS <span>↘</span></a>
+          <a class="btn btn-ghost" href="#sobre-mi">CONÓCEME <span>＋</span></a>
         </div>
-        <div class="hero-meta">
-          <span><i class="status-dot"></i> Siempre aprendiendo</span>
-          <span>Ciclismo · Tecnología</span>
+        <div class="hero-proof">
+          <div class="proof-mark">★</div>
+          <div><strong>CAMPEÓN NACIONAL</strong><small>El ciclismo también cuenta mi historia.</small></div>
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Ilustración abstracta que combina tecnología y ciclismo" role="img">
-        <div class="visual-grid"></div>
-        <div class="visual-orbit orbit-a"></div>
-        <div class="visual-orbit orbit-b"></div>
-        <div class="hero-sticker sticker-code"><span class="sticker-symbol">&lt;/&gt;</span><span><b>BUILD</b><small>con código</small></span></div>
-        <div class="hero-sticker sticker-ride"><span class="sticker-symbol">↗</span><span><b>KEEP MOVING</b><small>con constancia</small></span></div>
-        <div class="hero-monogram"><span>JH</span><i></i></div>
-        <div class="visual-caption"><span>01 — 02</span><span>CREAR · APRENDER · AVANZAR</span></div>
+      <div class="hero-art">
+        <div class="art-scanline"></div>
+        <div class="art-label art-label-top"><span>01 / 03</span><span>RIDE · BUILD · REPEAT</span></div>
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-tag tag-top"><b>01</b><span>FOCUS<br><small>MENTALIDAD</small></span></div>
+        <div class="art-tag tag-bottom"><b>02</b><span>FORWARD<br><small>SIEMPRE ADELANTE</small></span></div>
+        <svg class="cyclist-art" viewBox="0 0 620 470" role="img" aria-label="Ilustración de un ciclista en movimiento">
+          <defs>
+            <linearGradient id="bikeGlow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#b9ff69"/>
+              <stop offset="1" stop-color="#4ce0f2"/>
+            </linearGradient>
+            <linearGradient id="riderGlow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f4fbff"/>
+              <stop offset="1" stop-color="#65d9ed"/>
+            </linearGradient>
+          </defs>
+          <circle cx="300" cy="240" r="178" fill="none" stroke="#ffffff" stroke-opacity=".07" stroke-width="1"/>
+          <circle cx="300" cy="240" r="138" fill="none" stroke="#b9ff69" stroke-opacity=".13" stroke-width="1" stroke-dasharray="4 11"/>
+          <path d="M30 374 H590" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+          <path d="M55 395 H230 M390 395 H565" stroke="#b9ff69" stroke-opacity=".27" stroke-width="3" stroke-linecap="round"/>
+          <g fill="none" stroke="#eaf9ff" stroke-opacity=".82" stroke-width="5">
+            <circle cx="166" cy="325" r="83"/>
+            <circle cx="444" cy="325" r="83"/>
+          </g>
+          <g fill="none" stroke="url(#bikeGlow)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M166 325 L280 238 L330 325 L166 325"/>
+            <path d="M330 325 L444 325 L375 214 L280 238"/>
+            <path d="M280 238 L266 214 L300 214"/>
+            <path d="M444 325 L465 199 L493 190"/>
+            <path d="M154 214 L194 214"/>
+          </g>
+          <circle cx="330" cy="325" r="15" fill="#0a1420" stroke="#b9ff69" stroke-width="5"/>
+          <path d="M314 325 L298 346 M345 325 L360 345" stroke="#b9ff69" stroke-width="7" stroke-linecap="round"/>
+          <g fill="none" stroke="url(#riderGlow)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M284 120 L319 158 L375 214"/>
+            <path d="M319 158 L268 192 L280 238"/>
+            <path d="M284 120 L250 159 L215 180 L191 214"/>
+            <path d="M319 158 L358 146 L394 174 L465 199"/>
+            <path d="M280 238 L315 263 L330 325"/>
+            <path d="M280 238 L237 270 L205 315 L166 325"/>
+          </g>
+          <path d="M257 108 Q274 73 309 91 L328 112 L306 124 L267 122 Z" fill="#b9ff69" stroke="#e9fff4" stroke-width="4"/>
+          <path d="M272 123 Q292 132 309 118" fill="none" stroke="#0a1420" stroke-width="5" stroke-linecap="round"/>
+          <path d="M269 145 L321 162 L352 206 L292 236 L258 190 Z" fill="#1d6481" stroke="#dffaff" stroke-width="4" />
+          <path d="M284 152 L318 168 L331 190" fill="none" stroke="#b9ff69" stroke-width="5" stroke-linecap="round"/>
+          <path d="M191 214 L180 224 M465 199 L480 205" stroke="#f4fbff" stroke-width="8" stroke-linecap="round"/>
+          <path d="M53 275 L107 275 M76 291 L132 291 M493 270 L546 270 M515 286 L570 286" stroke="#b9ff69" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="166" cy="325" r="5" fill="#b9ff69"/>
+          <circle cx="444" cy="325" r="5" fill="#b9ff69"/>
+        </svg>
+        <div class="art-caption"><span>DETERMINACIÓN</span><span>DISCIPLINA</span><span>EVOLUCIÓN</span></div>
+      </div>
+      <div class="hero-bottom-note"><span>DESLIZA PARA EXPLORAR</span><span class="scroll-line"></span><span>QUITO, ECUADOR</span></div>
+    </section>
+
+    <section class="about section" id="sobre-mi">
+      <div class="section-index"><span>01</span><i></i><span>MI HISTORIA</span></div>
+      <div class="about-layout">
+        <h2>No me quedo<br>en la <em>línea de salida.</em></h2>
+        <div class="about-copy">
+          <p>Soy estudiante de <strong>Ingeniería en Computación en la Universidad San Francisco de Quito</strong>. Me gusta aprender haciendo: explorar herramientas, resolver problemas y crear proyectos que otras personas puedan probar.</p>
+          <p>También soy ciclista. La competencia me ha enseñado a ser constante, trabajar por mis objetivos y mantener la concentración incluso cuando el camino se pone difícil. Esa misma mentalidad la llevo a mis estudios y a cada proyecto que desarrollo.</p>
+          <a class="text-link" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">Explora mi GitHub <span>↗</span></a>
+        </div>
       </div>
     </section>
 
-    <section class="intro-section section" id="sobre-mi">
-      <div class="section-label"><span>01</span><span class="label-rule"></span><span>UN POCO SOBRE MÍ</span></div>
-      <div class="intro-grid">
-        <h2>Curiosidad para<br><em>aprender.</em> Energía<br>para avanzar.</h2>
-        <div class="intro-copy">
-          <p>Estudio <strong>Ingeniería en Computación en la USFQ</strong>. Me gusta descubrir cómo funciona la tecnología y transformar ideas en proyectos digitales. En la universidad he empezado a desarrollar páginas y videojuegos, aprendiendo a resolver problemas paso a paso.</p>
-          <p>Fuera de las clases, el ciclismo es una parte importante de mi vida. Me ha enseñado que la disciplina y la constancia hacen la diferencia, tanto en una competencia como al aprender algo nuevo.</p>
-          <a class="inline-link" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">Conoce mi trabajo en GitHub <span aria-hidden="true">↗</span></a>
+    <section class="cycling section" id="ciclismo">
+      <div class="cycling-card">
+        <div class="cycling-copy">
+          <div class="section-index"><span>02</span><i></i><span>MI PASIÓN POR EL CICLISMO</span></div>
+          <p class="cycling-kicker">MÁS QUE UN DEPORTE</p>
+          <h2>He aprendido a<br><em>pedalear por grande.</em></h2>
+          <p class="cycling-description">El ciclismo es uno de los mayores retos y orgullos de mi vida. Entreno, compito y he logrado títulos en campeonatos nacionales. Cada carrera representa horas de esfuerzo, constancia y ganas de seguir creciendo.</p>
+          <div class="champion-stamp"><span class="stamp-star">★</span><span><b>CAMPEÓN NACIONAL</b><small>CICLISMO COMPETITIVO</small></span></div>
+        </div>
+        <div class="cycling-side">
+          <div class="champion-number">N.º <span>01</span></div>
+          <div class="champion-ring"><span>🏆</span></div>
+          <p class="champion-quote">“Los resultados se construyen con disciplina, entrenamiento y determinación.”</p>
+          <div class="cycling-tags"><span>ESFUERZO</span><span>CONSTANCIA</span><span>SUPERACIÓN</span></div>
         </div>
       </div>
     </section>
 
-    <section class="interests-section section" id="intereses">
+    <section class="interests section" id="intereses">
       <div class="section-heading">
-        <div>
-          <div class="section-label"><span>02</span><span class="label-rule"></span><span>LO QUE ME INTERESA</span></div>
-          <h2>Mis intereses<span class="accent-dot">.</span></h2>
-        </div>
-        <p class="heading-side-text">Actividades e ideas que me inspiran a seguir aprendiendo y mejorando.</p>
+        <div><div class="section-index"><span>03</span><i></i><span>LO QUE ME MUEVE</span></div><h2>Mis intereses<span class="lime">.</span></h2></div>
+        <p>Tres áreas que forman parte de quién soy y de lo que quiero seguir aprendiendo.</p>
       </div>
-
       <div class="interest-grid">
-        <article class="interest-card interest-cycling">
-          <div class="interest-top"><span class="interest-number">01 / MOVIMIENTO</span><span class="interest-icon" aria-hidden="true">↗</span></div>
-          <div class="interest-symbol bicycle-symbol" aria-hidden="true">🚴</div>
+        <article class="interest-card interest-bike">
+          <div class="interest-number">01 <span>/ MOVIMIENTO</span></div>
+          <div class="interest-icon">🚴</div>
           <h3>Ciclismo</h3>
-          <p>Me gusta entrenar y competir. El ciclismo me ayuda a desarrollar disciplina, perseverancia y confianza en cada nuevo reto.</p>
-          <div class="interest-foot"><span>Deporte</span><span>Constancia</span><span>Competencia</span></div>
+          <p>Entrenar, competir y superarme. He conseguido títulos nacionales y busco nuevos retos sobre la bicicleta.</p>
+          <div class="interest-tags"><span>Competencia</span><span>Disciplina</span></div>
         </article>
         <article class="interest-card interest-code">
-          <div class="interest-top"><span class="interest-number">02 / CREACIÓN</span><span class="interest-icon" aria-hidden="true">⌘</span></div>
-          <div class="interest-symbol code-symbol" aria-hidden="true">&lt;/&gt;</div>
+          <div class="interest-number">02 <span>/ CREACIÓN</span></div>
+          <div class="interest-icon code-icon">&lt;/&gt;</div>
           <h3>Programación</h3>
-          <p>Me interesa crear páginas web y videojuegos, probar nuevas ideas y descubrir cómo convertir una solución en algo que se pueda usar.</p>
-          <div class="interest-foot"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <p>Me gusta construir páginas web y videojuegos, experimentar con código y transformar ideas en experiencias interactivas.</p>
+          <div class="interest-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         </article>
         <article class="interest-card interest-tech">
-          <div class="interest-top"><span class="interest-number">03 / EXPLORACIÓN</span><span class="interest-icon" aria-hidden="true">✳</span></div>
-          <div class="interest-symbol tech-symbol" aria-hidden="true">✳</div>
+          <div class="interest-number">03 <span>/ EXPLORACIÓN</span></div>
+          <div class="interest-icon">✳</div>
           <h3>Tecnología</h3>
-          <p>Me gusta conocer herramientas digitales y aprender cómo se conectan las aplicaciones, los servicios en línea y las bases de datos.</p>
-          <div class="interest-foot"><span>Innovación</span><span>Herramientas</span><span>Aprendizaje</span></div>
+          <p>Me interesa descubrir herramientas digitales, aplicaciones y nuevas formas de conectar la tecnología con la vida cotidiana.</p>
+          <div class="interest-tags"><span>Innovación</span><span>Aprendizaje</span></div>
         </article>
       </div>
     </section>
 
-    <section class="projects-section section" id="proyectos">
-      <div class="section-heading projects-heading">
-        <div>
-          <div class="section-label"><span>03</span><span class="label-rule"></span><span>TRABAJOS DEL CURSO</span></div>
-          <h2>Proyectos<span class="accent-dot">.</span></h2>
-        </div>
-        <p class="heading-side-text">Dos experiencias en las que puse en práctica la programación y el diseño de experiencias interactivas.</p>
+    <section class="projects section" id="proyectos">
+      <div class="section-heading">
+        <div><div class="section-index"><span>04</span><i></i><span>TRABAJOS DEL CURSO</span></div><h2>Proyectos que <em>he creado.</em></h2></div>
+        <p>Experiencias en las que he puesto en práctica diseño, lógica y programación.</p>
       </div>
 
-      <article class="project-card project-velocity">
-        <div class="project-visual velocity-art" role="img" aria-label="Ilustración de un videojuego de plataformas con personaje, anillos y obstáculos">
-          <div class="art-topline"><span>GAME / 001</span><span>PLATFORM RUNNER</span></div>
-          <div class="velocity-scene">
-            <div class="scene-sun"></div><div class="scene-cloud cloud-one"></div><div class="scene-cloud cloud-two"></div>
-            <div class="scene-hill hill-one"></div><div class="scene-hill hill-two"></div>
-            <div class="scene-ring ring-one"></div><div class="scene-ring ring-two"></div><div class="scene-gem"></div>
-            <div class="scene-ground"></div>
-            <div class="runner-character"><span class="runner-head"></span><span class="runner-body"></span><span class="runner-leg leg-one"></span><span class="runner-leg leg-two"></span></div>
-            <div class="scene-obstacle"></div>
+      <article class="project-card">
+        <div class="project-preview velocity-preview">
+          <div class="preview-top"><span>PROYECTO 01</span><span>PLATFORM GAME</span></div>
+          <div class="velocity-landscape">
+            <div class="sun"></div><div class="mountain mountain-a"></div><div class="mountain mountain-b"></div>
+            <div class="coin coin-a"></div><div class="coin coin-b"></div><div class="gem"></div>
+            <div class="little-runner"><span class="runner-face"></span><span class="runner-shirt"></span><span class="runner-shoe shoe-a"></span><span class="runner-shoe shoe-b"></span></div>
+            <div class="obstacle"></div><div class="ground"></div>
           </div>
-          <div class="art-bottomline"><span>VELOCITY RUN</span><span>PLAY / JUMP / RUN</span></div>
+          <div class="preview-title"><strong>VELOCITY RUN</strong><span>RUN · JUMP · WIN</span></div>
         </div>
-        <div class="project-content">
-          <div class="project-overline"><span>PROYECTO 01</span><span class="project-pill">VIDEOJUEGO · INDIVIDUAL</span></div>
-          <h3>Velocity <span>Run</span></h3>
-          <p class="project-description">Un videojuego de plataformas en el que el jugador avanza, salta y se agacha para esquivar obstáculos mientras recoge anillos y cristales. Está pensado para quienes disfrutan los retos de habilidad y velocidad.</p>
-          <div class="project-details">
-            <h4>¿Cómo está hecho?</h4>
-            <p>Lo desarrollé con HTML, CSS y JavaScript. HTML organiza la pantalla, CSS define el escenario y los personajes, y JavaScript controla los movimientos, los obstáculos y el puntaje. Está publicado en GitHub Pages; la lógica se ejecuta en el navegador y no utiliza una base de datos para guardar resultados.</p>
-          </div>
-          <div class="project-bottom">
-            <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
-            <a class="project-link" href="https://jhonn16ax.github.io/proyecto/" target="_blank" rel="noopener noreferrer">Ver proyecto <b aria-hidden="true">↗</b></a>
+        <div class="project-info">
+          <div class="project-meta"><span>01 / VIDEOJUEGO</span><span class="project-status">PUBLICADO</span></div>
+          <h3>Velocity <em>Run</em></h3>
+          <p>Un videojuego de plataformas en el que el jugador corre, salta y se agacha para esquivar obstáculos, mientras recoge anillos y cristales. Está pensado para quienes disfrutan los desafíos de habilidad y velocidad.</p>
+          <div class="how-made"><b>¿CÓMO LO HICE?</b><p>Utilicé HTML para organizar la página, CSS para diseñar el escenario y JavaScript para controlar los movimientos, obstáculos, colisiones y puntaje. Está publicado en GitHub Pages; la lógica se ejecuta en el navegador y no utiliza una base de datos para guardar resultados.</p></div>
+          <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+          <div class="project-actions">
+            <a class="btn btn-main" href="https://jhonn16ax.github.io/proyecto/" target="_blank" rel="noopener noreferrer">JUGAR VELOCITY RUN <span>↗</span></a>
+            <a class="source-link" href="https://github.com/Jhonn16ax/proyecto" target="_blank" rel="noopener noreferrer">Ver código fuente</a>
           </div>
         </div>
       </article>
 
-      <article class="project-card project-speed">
-        <div class="project-visual speed-art" role="img" aria-label="Ilustración de un videojuego de carreras 2D con dos autos en una pista">
-          <div class="art-topline"><span>GAME / 002</span><span>ONLINE RACING</span></div>
-          <div class="speed-scene">
-            <div class="speed-skyline skyline-a"></div><div class="speed-skyline skyline-b"></div>
-            <div class="race-track"><span class="track-line"></span><span class="track-line line-two"></span></div>
-            <div class="race-car car-a"><i></i></div><div class="race-car car-b"><i></i></div>
-            <div class="race-hud"><span>PLAYER 01 <b>01</b></span><span>PLAYER 02 <b>02</b></span></div>
-            <div class="race-light light-a"></div><div class="race-light light-b"></div>
+      <article class="project-card project-second">
+        <div class="project-preview rivals-preview">
+          <div class="preview-top"><span>PROYECTO 02</span><span>ONLINE RACING</span></div>
+          <div class="rivals-landscape">
+            <div class="city city-a"></div><div class="city city-b"></div>
+            <div class="race-road"><span class="road-dash"></span></div>
+            <div class="mini-car car-one"><i></i></div><div class="mini-car car-two"><i></i></div>
+            <div class="lap lap-one">P1</div><div class="lap lap-two">P2</div>
           </div>
-          <div class="art-bottomline"><span>SPEED RIVALS</span><span>2 PLAYERS / 1 TRACK</span></div>
+          <div class="preview-title"><strong>SPEED RIVALS</strong><span>2 PLAYERS · 1 RACE</span></div>
         </div>
-        <div class="project-content">
-          <div class="project-overline"><span>PROYECTO 02</span><span class="project-pill">VIDEOJUEGO · MULTIJUGADOR</span></div>
-          <h3>Speed <span>Rivals</span></h3>
-          <p class="project-description">Un videojuego de carreras 2D para dos jugadores. Cada participante puede conectarse desde su propio navegador, competir en la misma carrera y comparar la distancia recorrida.</p>
-          <div class="project-details">
-            <h4>¿Cómo está hecho?</h4>
-            <p>Está desarrollado con HTML, CSS y JavaScript; JavaScript dibuja la carrera en un lienzo 2D y controla las interacciones. Vercel publica la página. Supabase Realtime comparte el estado de los jugadores y la tabla <code>race_results</code> guarda el ganador, la distancia, los nombres de los jugadores y la fecha de la carrera.</p>
-          </div>
-          <div class="project-bottom">
-            <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span><span>Vercel</span></div>
-            <a class="project-link" href="https://proyecto12-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">Ver proyecto <b aria-hidden="true">↗</b></a>
+        <div class="project-info">
+          <div class="project-meta"><span>02 / MULTIJUGADOR</span><span class="project-status">PUBLICADO</span></div>
+          <h3>Speed <em>Rivals</em></h3>
+          <p>Un videojuego de carreras 2D para dos jugadores. Cada participante se conecta desde su propio dispositivo, comparte la carrera en línea y compite por recorrer la mayor distancia.</p>
+          <div class="how-made"><b>¿CÓMO LO HICE?</b><p>Está desarrollado con HTML, CSS y JavaScript. Vercel publica la página; Supabase Realtime sincroniza a los jugadores y la tabla <code>race_results</code> guarda el ganador, la distancia, los nombres y la fecha de la carrera.</p></div>
+          <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span><span>Vercel</span></div>
+          <div class="project-actions">
+            <a class="btn btn-main" href="https://proyecto12-kohl.vercel.app/" target="_blank" rel="noopener noreferrer">JUGAR SPEED RIVALS <span>↗</span></a>
+            <a class="source-link" href="https://github.com/Jhonn16ax/proyecto12" target="_blank" rel="noopener noreferrer">Ver código fuente</a>
           </div>
         </div>
       </article>
-      <p class="project-note"><span>+</span> Las vistas de esta sección son ilustraciones de cada juego. Antes de entregar, puedes reemplazarlas por capturas reales de tus proyectos para cumplir con el requisito de imágenes de la tarea.</p>
+      <p class="project-footnote"><span>NOTA</span> Las imágenes de las tarjetas son ilustraciones del diseño. Para la entrega final, reemplázalas por capturas reales de los juegos, como pide la tarea.</p>
     </section>
 
-    <section class="design-section section">
-      <div class="design-card">
-        <div class="design-mark">JH<span>.</span></div>
-        <div class="design-copy">
-          <div class="section-label"><span>04</span><span class="label-rule"></span><span>UNA DECISIÓN DE DISEÑO</span></div>
-          <h2>Sobre este sitio</h2>
-          <p>Elegí una combinación de tonos oscuros con acentos verde lima y celeste para transmitir energía y tecnología, relacionando el diseño con mis intereses en el ciclismo y la programación. Organicé el contenido en una sola página para que sea fácil encontrar cada sección desde una computadora o un teléfono.</p>
-        </div>
+    <section class="closing section">
+      <div class="closing-card">
+        <div class="closing-glow"></div>
+        <div class="section-index"><span>05</span><i></i><span>MI MANERA DE VERLO</span></div>
+        <h2>Siempre hay una<br><em>siguiente meta.</em></h2>
+        <p>Elegí un estilo oscuro con acentos verdes y celestes porque combina la energía del deporte con una estética tecnológica. Organicé todo en una sola página para que sea fácil conocer mi historia, mis intereses y mis proyectos desde cualquier dispositivo.</p>
+        <a class="btn btn-main" href="https://github.com/Jhonn16ax" target="_blank" rel="noopener noreferrer">ENCUÉNTRAME EN GITHUB <span>↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <a class="footer-brand" href="#inicio">JHONN<span>.</span></a>
-    <span>PORTAFOLIO PERSONAL · 2026</span>
-    <a class="back-top" href="#inicio">VOLVER ARRIBA ↑</a>
+    <span>INGENIERÍA EN COMPUTACIÓN · USFQ</span>
+    <a href="#inicio">VOLVER ARRIBA ↑</a>
   </footer>
 </body>
 </html>
