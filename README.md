@@ -1,17 +1,17 @@
 # Jhonn | Portafolio de Ingeniería en Computación
 
-Bienvenido a mi portafolio.
+Bienvenido a mi portafolio académico.
 
-Soy estudiante de **Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)**. Me interesa el desarrollo web, la programación y la creación de aplicaciones interactivas. Me motiva aprender nuevas tecnologías, resolver problemas y convertir ideas en proyectos funcionales.
+Soy estudiante de **Ingeniería en Computación en la Universidad San Francisco de Quito (USFQ)**. Me interesa el desarrollo web, la programación y la creación de aplicaciones interactivas. Me motiva aprender nuevas tecnologías, analizar problemas y convertir ideas en proyectos funcionales.
 
 Me considero una persona responsable, organizada y comprometida con los objetivos que asumo. Valoro el trabajo en equipo, la comunicación y el aprendizaje continuo.
 
 ## Conocimientos aplicados
 
-Estas son tecnologías y herramientas que he utilizado en proyectos académicos:
+Tecnologías y herramientas que he utilizado en proyectos académicos:
 
-- **HTML5 y CSS3:** estructura, estilos y diseño adaptable de páginas web.
-- **JavaScript:** lógica, eventos, interacciones y comportamiento de aplicaciones.
+- **HTML5 y CSS3:** estructura, estilos e interfaces adaptables.
+- **JavaScript:** lógica, eventos e interacciones de aplicaciones.
 - **Supabase Realtime:** comunicación y sincronización entre jugadores.
 - **Supabase Database:** almacenamiento de resultados en la tabla \`race_results\`.
 - **Vercel y GitHub Pages:** publicación de proyectos web.
@@ -38,17 +38,17 @@ Videojuego de carreras 2D para dos jugadores que pueden conectarse desde distint
 - **Tecnologías:** HTML, CSS, JavaScript, Supabase Realtime y Vercel.
 - **Funcionamiento:** Supabase Realtime sincroniza el estado de los jugadores. La tabla \`race_results\` almacena el ganador, la distancia, los nombres de los jugadores y la fecha de la carrera.
 
-## Ciclismo y logros deportivos
+## Perfil personal y ciclismo
 
-El ciclismo competitivo es una parte importante de mi vida. Me ha enseñado a mantener la constancia, organizar mi tiempo, prepararme para los retos y aprender de cada competencia. En la temporada 2026 obtuve el título de **campeón nacional**, además de **dos medallas de oro y dos de bronce**.
+Además de mis estudios, practico ciclismo competitivo. En la temporada 2026 obtuve el título de **campeón nacional**, junto con **dos medallas de oro y dos medallas de bronce**. Este deporte me ha ayudado a fortalecer la disciplina, la responsabilidad, la organización del tiempo y la constancia, cualidades que también aplico a mis estudios y proyectos.
 
-La disciplina, la concentración y el compromiso que desarrollo en el deporte también forman parte de mi manera de estudiar y trabajar en proyectos de computación.
+## Recursos visuales
 
-La carpeta \`img/\` contiene tres ilustraciones originales que acompañan la sección de ciclismo: entrenamiento, competencia y logros.
+La carpeta \`img/\` contiene ilustraciones originales relacionadas con el desarrollo de software y los dos videojuegos del portafolio. Las ilustraciones de los juegos sirven como apoyo visual; deben sustituirse por capturas reales de las aplicaciones para una entrega académica que solicite evidencia visual de cada proyecto.
 
 ## Sobre el diseño
 
-El sitio utiliza una estética tecnológica en tonos azul oscuro y celeste, con una estructura clara para presentar mi perfil, conocimientos y proyectos. El contenido está organizado en una sola página y se adapta a computadoras y teléfonos.
+El portafolio utiliza una estética tecnológica en tonos azul oscuro y celeste. La programación y los proyectos ocupan el centro de la página; el ciclismo aparece como un interés personal complementario. El contenido está organizado en una sola página adaptable a computadoras y teléfonos.
 
 ---
 
