@@ -281,6 +281,59 @@
       .cycling-achievements { padding: 21px; }
     }
 
+
+    .tech-hero-visual {
+      position: relative; min-width: 0; overflow: hidden; border: 1px solid rgba(117,190,229,.24);
+      border-radius: 15px; background: linear-gradient(145deg,#173958,#0b192c);
+      box-shadow: 0 28px 80px rgba(0,0,0,.26),0 0 55px rgba(76,182,231,.08);
+    }
+    .tech-hero-visual img { display: block; width: 100%; aspect-ratio: 900 / 620; object-fit: cover; }
+    .tech-image-label,.tech-image-footer {
+      position: absolute; z-index: 2; right: 0; left: 0; display: flex; justify-content: space-between; gap: 10px;
+      padding: 12px 14px; color: rgba(231,245,255,.8); font: .5rem var(--mono); letter-spacing: .09em;
+      background: linear-gradient(180deg,rgba(8,18,32,.78),transparent);
+    }
+    .tech-image-label { top: 0; }
+    .tech-image-label span:first-child { color: var(--cyan); }
+    .tech-image-footer { bottom: 0; color: #d6e5f4; background: linear-gradient(0deg,rgba(8,18,32,.9),transparent); }
+    .project-art-image {
+      position: absolute; top: 36px; right: 0; bottom: 34px; left: 0; display: block;
+      width: 100%; height: calc(100% - 70px); object-fit: cover;
+    }
+    .cycling-section { padding-top: 18px; }
+    .cycling-strip {
+      display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 19px; align-items: center;
+      padding: 23px 24px; border: 1px solid rgba(169,230,186,.19); border-radius: 11px;
+      background: linear-gradient(105deg,rgba(29,74,75,.19),rgba(20,37,56,.76));
+    }
+    .cycling-icon {
+      width: 48px; height: 48px; display: grid; place-items: center; border-radius: 10px;
+      color: var(--green); background: rgba(169,230,186,.1); font-size: 1.35rem;
+    }
+    .cycling-copy .section-kicker { margin: 0 0 5px; font-size: .55rem; }
+    .cycling-copy h2 { margin: 0 0 5px; font-size: 1.08rem; letter-spacing: -.025em; }
+    .cycling-copy p { max-width: 650px; margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.75; }
+    .cycling-achievement {
+      min-width: 205px; padding: 12px 14px; border: 1px solid rgba(169,230,186,.2); border-radius: 8px;
+      background: rgba(8,19,31,.35);
+    }
+    .cycling-achievement > span { display: block; color: var(--green); font: .49rem var(--mono); letter-spacing: .08em; }
+    .cycling-achievement strong { display: block; margin: 5px 0 3px; color: var(--ink); font-size: .82rem; }
+    .cycling-achievement div { color: var(--muted); font-size: .61rem; }
+    .cycling-achievement b { color: var(--green); font-size: .85rem; }
+    .cycling-achievement i { padding: 0 4px; color: var(--dim); font-style: normal; }
+    @media (max-width: 900px) {
+      .cycling-strip { grid-template-columns: auto minmax(0,1fr); }
+      .cycling-achievement { grid-column: 2; justify-self: start; }
+    }
+    @media (max-width: 680px) {
+      .tech-image-label,.tech-image-footer { font-size: .43rem; padding: 9px; }
+      .cycling-strip { grid-template-columns: auto minmax(0,1fr); padding: 16px; gap: 12px; }
+      .cycling-achievement { grid-column: 1 / -1; margin-left: 60px; }
+      .cycling-copy h2 { font-size: 1rem; }
+      .cycling-copy p { font-size: .67rem; }
+    }
+
 </style>
 </head>
 <body>
@@ -313,23 +366,10 @@
         <div class="hero-note"><i></i> RESPONSABILIDAD · APRENDIZAJE CONTINUO · COMPROMISO</div>
       </div>
 
-      <div class="code-window" aria-label="Ilustración de código de programación">
-        <div class="window-bar"><i class="window-dot"></i><i class="window-dot"></i><i class="window-dot"></i><span class="window-file">perfil.js</span></div>
-        <div class="code-body">
-          <div class="code-line"><span class="line-no">01</span><span><span class="code-pink">const</span> <span class="code-blue">desarrollador</span> = {</span></div>
-          <div class="code-line"><span class="line-no">02</span><span>&nbsp;&nbsp;<span class="code-cyan">nombre</span>: <span class="code-green">"Jhonn"</span>,</span></div>
-          <div class="code-line"><span class="line-no">03</span><span>&nbsp;&nbsp;<span class="code-cyan">formacion</span>: <span class="code-green">"Ing. en Computación"</span>,</span></div>
-          <div class="code-line"><span class="line-no">04</span><span>&nbsp;&nbsp;<span class="code-cyan">intereses</span>: [</span></div>
-          <div class="code-line"><span class="line-no">05</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Desarrollo web"</span>,</span></div>
-          <div class="code-line"><span class="line-no">06</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"JavaScript"</span>,</span></div>
-          <div class="code-line"><span class="line-no">07</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Tecnología"</span></span></div>
-          <div class="code-line"><span class="line-no">08</span><span>&nbsp;&nbsp;],</span></div>
-          <div class="code-line"><span class="line-no">09</span><span>&nbsp;&nbsp;<span class="code-cyan">actitud</span>: <span class="code-green">"Siempre aprendiendo"</span>,</span></div>
-          <div class="code-line"><span class="line-no">10</span><span>&nbsp;&nbsp;<span class="code-cyan">objetivo</span>: <span class="code-green">"Crear soluciones útiles"</span></span></div>
-          <div class="code-line"><span class="line-no">11</span><span>};</span></div>
-          <div class="code-line"><span class="line-no">12</span><span class="code-muted">// El siguiente reto empieza aquí.</span></div>
-        </div>
-        <div class="window-footer"><span>● HTML · CSS · JAVASCRIPT</span><span>READY TO LEARN</span></div>
+      <div class="tech-hero-visual">
+        <div class="tech-image-label"><span>DESARROLLO DE SOFTWARE</span><span>IDEAS → CÓDIGO → SOLUCIONES</span></div>
+        <img src="img/desarrollo-software.svg" alt="Ilustración de una computadora con código y una interfaz web en desarrollo">
+        <div class="tech-image-footer"><span>PROGRAMACIÓN</span><span>DESARROLLO WEB</span><span>CREATIVIDAD</span></div>
       </div>
     </section>
 
@@ -373,9 +413,9 @@
       </div>
       <div class="projects">
         <article class="project">
-          <div class="project-visual velocity-visual" role="img" aria-label="Ilustración de un videojuego de plataformas">
+          <div class="project-visual velocity-visual">
             <div class="visual-meta"><span>PROYECTO 01</span><span>JUEGO DE PLATAFORMAS</span></div>
-            <div class="runner-sky"><div class="runner-sun"></div><div class="runner-hill hill-a"></div><div class="runner-hill hill-b"></div><div class="runner-ring"></div><div class="runner-ring r2"></div><div class="runner-gem"></div><div class="runner-person"></div><div class="crate"></div><div class="runner-ground"></div></div>
+            <img class="project-art-image" src="img/velocity-run-visual.svg" alt="Ilustración del videojuego Velocity Run con un personaje y objetos para recoger">
             <div class="visual-bottom"><span>VELOCITY RUN</span><span>RUN · JUMP · PLAY</span></div>
           </div>
           <div class="project-copy">
@@ -389,9 +429,9 @@
         </article>
 
         <article class="project">
-          <div class="project-visual rivals-visual" role="img" aria-label="Ilustración de un juego de carreras multijugador">
+          <div class="project-visual rivals-visual">
             <div class="visual-meta"><span>PROYECTO 02</span><span>JUEGO MULTIJUGADOR</span></div>
-            <div class="runner-sky"><div class="race-city"></div><div class="race-track"></div><div class="mini-car one"></div><div class="mini-car two"></div></div>
+            <img class="project-art-image" src="img/speed-rivals-visual.svg" alt="Ilustración del videojuego Speed Rivals con dos autos en una pista nocturna">
             <div class="visual-bottom"><span>SPEED RIVALS</span><span>2 PLAYERS · ONLINE</span></div>
           </div>
           <div class="project-copy">
@@ -407,56 +447,18 @@
     </section>
 
     <section class="section cycling-section" id="ciclismo">
-      <div class="section-head">
-        <div><div class="section-kicker"><b>04</b> / MI TRAYECTORIA DEPORTIVA</div><h2>El ciclismo también<br>forma parte de quién soy.</h2></div>
-        <p class="section-summary">Una pasión que me ha enseñado a trabajar por objetivos, mantener la constancia y dar lo mejor de mí en cada desafío.</p>
-      </div>
-
-      <div class="cycling-feature">
-        <div class="cycling-story">
-          <div class="cycling-kicker">CICLISMO COMPETITIVO</div>
-          <h3>Más que llegar a la meta,<br><span>disfruto el camino.</span></h3>
-          <p>El ciclismo ocupa un lugar importante en mi vida. Es una actividad que exige preparación, compromiso y disciplina. Cada entrenamiento y cada competencia representan una oportunidad para conocer mis capacidades, corregir errores y seguir mejorando.</p>
-          <p>Participar en campeonatos nacionales me ha permitido vivir retos exigentes y valorar el esfuerzo que existe detrás de cada resultado. En la temporada 2026 alcancé el título de <strong>campeón nacional</strong>, además de conseguir <strong>dos medallas de oro y dos medallas de bronce</strong>.</p>
-          <p>Estos logros son una motivación para continuar creciendo. Más allá de las medallas, valoro la constancia, la responsabilidad y la concentración que se necesitan para prepararse y competir.</p>
+      <div class="cycling-strip">
+        <div class="cycling-icon" aria-hidden="true">🚴</div>
+        <div class="cycling-copy">
+          <div class="section-kicker"><b>04</b> / INTERÉS PERSONAL</div>
+          <h2>El ciclismo fortalece mi disciplina.</h2>
+          <p>Fuera de la computación, practico ciclismo competitivo. Entrenar y participar en campeonatos me ha enseñado a ser constante, responsable, organizar mi tiempo y mantener el compromiso con mis metas. Esa misma actitud la aplico al estudiar, programar y resolver problemas.</p>
         </div>
-        <div class="cycling-achievements" aria-label="Logros de ciclismo de la temporada 2026">
-          <div class="achievement-top"><span>TEMPORADA</span><b>2026</b></div>
-          <div class="achievement-main">
-            <div class="trophy-icon">🏆</div>
-            <div><small>LOGRO DESTACADO</small><strong>Campeón nacional</strong><span>Ciclismo competitivo</span></div>
-          </div>
-          <div class="medal-row">
-            <div class="medal medal-gold"><span>★</span></div>
-            <div><b>2 medallas de oro</b><small>Resultado de esfuerzo y preparación</small></div>
-          </div>
-          <div class="medal-row">
-            <div class="medal medal-bronze"><span>★</span></div>
-            <div><b>2 medallas de bronce</b><small>Experiencia que impulsa nuevos retos</small></div>
-          </div>
-          <div class="achievement-bottom">ESFUERZO · CONSTANCIA · SUPERACIÓN</div>
+        <div class="cycling-achievement">
+          <span>LOGROS DEPORTIVOS · TEMPORADA 2026</span>
+          <strong>Campeón nacional</strong>
+          <div><b>2</b> medallas de oro <i>·</i> <b>2</b> medallas de bronce</div>
         </div>
-      </div>
-
-      <div class="cycling-gallery">
-        <figure class="cycling-photo cycling-photo-large">
-          <img src="img/ciclismo-entrenamiento.svg" alt="Ilustración de un ciclista entrenando en una ruta de montaña">
-          <figcaption><span>01 / PREPARACIÓN</span><b>La constancia se construye en cada entrenamiento.</b></figcaption>
-        </figure>
-        <figure class="cycling-photo">
-          <img src="img/ciclismo-competencia.svg" alt="Ilustración de varios ciclistas durante una competencia">
-          <figcaption><span>02 / COMPETENCIA</span><b>Enfrentar retos y aprender en cada carrera.</b></figcaption>
-        </figure>
-        <figure class="cycling-photo">
-          <img src="img/ciclismo-logros.svg" alt="Ilustración de trofeo y medallas deportivas">
-          <figcaption><span>03 / RESULTADOS</span><b>Los logros reflejan el trabajo realizado.</b></figcaption>
-        </figure>
-      </div>
-      <p class="cycling-image-note">Imágenes ilustrativas creadas para acompañar esta sección; no representan fotografías de mis competencias.</p>
-
-      <div class="cycling-to-computing">
-        <div class="cycling-bridge-icon">↗</div>
-        <div><b>UNA DISCIPLINA QUE TAMBIÉN APLICO A LA COMPUTACIÓN</b><p>El deporte me ha enseñado a organizar mi tiempo, mantener el compromiso y no rendirme ante los problemas. Llevo esa mentalidad a mis estudios y proyectos de programación: analizo lo que debo mejorar, practico, aprendo de los errores y trabajo hasta alcanzar el objetivo.</p></div>
       </div>
     </section>
 
